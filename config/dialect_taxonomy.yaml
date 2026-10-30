@@ -1,0 +1,38 @@
+# Dialect groups. The source's own label is always kept in source_dialect_label; a group is set only
+# when the source states a dialect or a country for the audio. Country labels map to a region group
+# and are marked "source-stated country". Without a statement the group is "unlabelled".
+version: 2026.10.30
+groups:
+  MSA: {iso639_3: arb, label_ar: الفصحى المعاصرة}
+  Classical-Quranic: {label_ar: الفصحى التراثية والتلاوة}
+  Gulf: {label_ar: الخليجية}
+  Levantine: {label_ar: الشامية}
+  Egyptian: {iso639_3: arz, label_ar: المصرية}
+  Maghrebi: {label_ar: المغاربية}
+  Iraqi: {iso639_3: acm, label_ar: العراقية}
+  Sudanese: {iso639_3: apd, label_ar: السودانية}
+  Yemeni: {label_ar: اليمنية}
+  mixed: {label_ar: متعددة}
+  unlabelled: {label_ar: غير موسومة}
+non_msa_groups: [Gulf, Levantine, Egyptian, Maghrebi, Iraqi, Sudanese, Yemeni]
+countries:
+  Algeria: {group: Maghrebi, iso639_3: arq}
+  Bahrain: {group: Gulf}
+  Egypt: {group: Egyptian, iso639_3: arz}
+  Iraq: {group: Iraqi, iso639_3: acm}
+  Jordan: {group: Levantine, iso639_3: ajp}
+  Kuwait: {group: Gulf}
+  Lebanon: {group: Levantine, iso639_3: apc}
+  Libya: {group: Maghrebi, iso639_3: ayl}
+  Mauritania: {group: Maghrebi, iso639_3: mey}
+  Morocco: {group: Maghrebi, iso639_3: ary}
+  Oman: {group: Gulf}
+  Palestine: {group: Levantine, iso639_3: ajp}
+  Qatar: {group: Gulf}
+  Saudi Arabia: {group: Gulf}
+  Sudan: {group: Sudanese, iso639_3: apd}
+  Syria: {group: Levantine, iso639_3: apc}
+  Tunisia: {group: Maghrebi, iso639_3: aeb}
+  UAE: {group: Gulf}
+  Yemen: {group: Yemeni}
+genres: [read, conversational, broadcast, recitation, isolated-words, studio-tts, telephony, code-switch, mixed]

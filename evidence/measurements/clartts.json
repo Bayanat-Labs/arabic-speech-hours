@@ -1,0 +1,73 @@
+{
+ "id": "clartts",
+ "spec": {
+  "kind": "hf_viewer_stats",
+  "repo": "MBZUAI/ClArTTS",
+  "column": "duration",
+  "splits": [
+   [
+    "default",
+    "train"
+   ],
+   [
+    "default",
+    "test"
+   ]
+  ]
+ },
+ "kind": "hf_viewer_stats",
+ "repo": "MBZUAI/ClArTTS",
+ "revision": "2f6e820abba8b5168b346c43479a324d8d37e35a",
+ "column": "duration",
+ "scale": 1.0,
+ "parts": [
+  {
+   "config": "default",
+   "split": "train",
+   "num_examples": 9500,
+   "nan_count": 0,
+   "mean": 4.22865,
+   "min": 1.79,
+   "max": 12.78,
+   "seconds": 40172.175,
+   "partial": false
+  },
+  {
+   "config": "default",
+   "split": "test",
+   "num_examples": 205,
+   "nan_count": 0,
+   "mean": 4.31205,
+   "min": 3.02,
+   "max": 10.67,
+   "seconds": 883.9702500000001,
+   "partial": false
+  }
+ ],
+ "rows": 9705,
+ "seconds": 41056.14525,
+ "measured_at": "2026-10-30T12:57:52Z",
+ "api": {
+  "id": "MBZUAI/ClArTTS",
+  "sha": "2f6e820abba8b5168b346c43479a324d8d37e35a",
+  "lastModified": "2025-10-01T11:28:43.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": "cc-by-4.0",
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "task_categories:text-to-speech",
+   "task_categories:text-to-audio",
+   "language:ar",
+   "license:cc-by-4.0",
+   "size_categories:1K<n<10K",
+   "modality:tabular",
+   "modality:text",
+   "modality:audio"
+  ],
+  "n_files": 29
+ },
+ "note": "seconds = mean x non-null count; the viewer rounds the mean to 5 decimals"
+}

@@ -1,0 +1,1460 @@
+{
+ "id": "tarteel-recitations",
+ "spec": {
+  "kind": "hf_parquet_columns",
+  "repo": "tarteel-ai/everyayah",
+  "revision": "6ea510862d64f59e555a4a8363eebc0f415621df",
+  "pattern": "data/*.parquet",
+  "duration_col": "duration"
+ },
+ "kind": "hf_parquet_columns",
+ "repo": "tarteel-ai/everyayah",
+ "revision": "6ea510862d64f59e555a4a8363eebc0f415621df",
+ "pattern": "data/*.parquet",
+ "columns_read": [
+  "duration"
+ ],
+ "duration_column": "duration",
+ "scale": 1.0,
+ "files": [
+  {
+   "path": "data/test-00000-of-00013-18d88ded65aa7b53.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 1428392591,
+   "seconds": 47554.420592,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00001-of-00013-bcc921915a4a15f3.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 825838076,
+   "seconds": 25859.570019,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00002-of-00013-b4218deff2d7f268.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 874434804,
+   "seconds": 28135.127309,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00003-of-00013-eb1ac68e070a388e.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 872634516,
+   "seconds": 27274.831702,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00004-of-00013-1e7bb5cb0e56549a.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 826978494,
+   "seconds": 25836.213687000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00005-of-00013-4e0f03a48e0aaac5.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 1353943272,
+   "seconds": 44109.653096,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00006-of-00013-fad04ec308138364.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 920002665,
+   "seconds": 29817.389331000006,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00007-of-00013-9af7597d0a90a401.parquet",
+   "rows": 1806,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 856729611,
+   "seconds": 27148.316669,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00008-of-00013-9eaed5fb5fe455b0.parquet",
+   "rows": 1805,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 809262344,
+   "seconds": 25533.125086,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00009-of-00013-cbe112f39e947006.parquet",
+   "rows": 1805,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 736367463,
+   "seconds": 23081.638939,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00010-of-00013-caa23c37d46026bb.parquet",
+   "rows": 1805,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 676426968,
+   "seconds": 21131.206287,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00011-of-00013-1a285a00e6fda5f7.parquet",
+   "rows": 1805,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 793836562,
+   "seconds": 24927.439937000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00012-of-00013-9550ff55e5f66569.parquet",
+   "rows": 1805,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 800306508,
+   "seconds": 25101.03644,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00000-of-00132-5f576ecc6b9cc4e3.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1744212817,
+   "seconds": 58840.26707,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00001-of-00132-1efd575d27eae362.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1202894965,
+   "seconds": 41268.001271,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00002-of-00132-1fe19dfaeff1e438.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 921254232,
+   "seconds": 31418.215405,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00003-of-00132-04dae05c9eddee83.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1669302384,
+   "seconds": 56247.218241,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00004-of-00132-b12fae9d9ff0e666.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1267666429,
+   "seconds": 42590.03988900001,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00005-of-00132-a9ed73fbe9a97f09.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 987974416,
+   "seconds": 33348.945827999996,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00006-of-00132-b1c2d74f4ab01280.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 990138367,
+   "seconds": 31611.565937,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00007-of-00132-70d7a8739433bea3.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 721355962,
+   "seconds": 22707.253388999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00008-of-00132-e43ee59cca4e3d71.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 652801282,
+   "seconds": 20515.994888,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00009-of-00132-c19bf54066f19604.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 688501791,
+   "seconds": 21633.097873000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00010-of-00132-67a2ee44f4b0bac2.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 928294036,
+   "seconds": 29199.854062,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00011-of-00132-fa3800cc7ff1872f.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 687716248,
+   "seconds": 21644.195494,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00012-of-00132-ff3b3a718fd352fc.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 450793742,
+   "seconds": 14135.380276,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00013-of-00132-2b7daaf9d3dc3677.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1015480838,
+   "seconds": 31728.751472,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00014-of-00132-78ca400ce4f64574.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 678194895,
+   "seconds": 21189.120884000004,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00015-of-00132-4cf10a64e66c2698.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 582281887,
+   "seconds": 18192.315710000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00016-of-00132-c7b7c8f102917851.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 576717656,
+   "seconds": 18015.174310000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00017-of-00132-daf1d004c24a9ba0.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 591842835,
+   "seconds": 18486.018149999996,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00018-of-00132-c3d71b5591fc8ba8.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 512380950,
+   "seconds": 16003.582379,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00019-of-00132-fd6b73bfdb5bcfca.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 367701255,
+   "seconds": 11499.349049,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00020-of-00132-5bccdd2c076abbc9.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 883809609,
+   "seconds": 27710.086702999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00021-of-00132-283668039bf07a0b.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 594866854,
+   "seconds": 18666.911056,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00022-of-00132-159ff67b859d869a.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 474994547,
+   "seconds": 14873.498002999999,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00023-of-00132-9ce5a55fe980380a.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 927154043,
+   "seconds": 28972.651827,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00024-of-00132-53df69b084229791.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 763636895,
+   "seconds": 23870.203077,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00025-of-00132-28329e8594671cb5.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 709054662,
+   "seconds": 22169.230542999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00026-of-00132-ec1819427cdb0768.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 606705914,
+   "seconds": 19980.878872,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00027-of-00132-e68c388ae7ef1772.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 778559204,
+   "seconds": 26988.326951000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00028-of-00132-0ebc8598928a18c9.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 635418556,
+   "seconds": 21911.672313,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00029-of-00132-9359e7941bd25c8e.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 408403902,
+   "seconds": 12955.622680999999,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00030-of-00132-e0731e0f8869427b.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 869280632,
+   "seconds": 27181.314689,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00031-of-00132-1f15ca6c78239802.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 627318164,
+   "seconds": 19601.8222,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00032-of-00132-07d0b7bd948ac6d2.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 554605502,
+   "seconds": 17330.714527,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00033-of-00132-0b8d0dd8017ececf.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 738871370,
+   "seconds": 23082.037167999995,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00034-of-00132-24d034cddb00f88a.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 753370847,
+   "seconds": 23533.220140999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00035-of-00132-ea221e65c9930d0e.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 617200553,
+   "seconds": 19278.912876000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00036-of-00132-01a23f54540f6e8d.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 516543090,
+   "seconds": 16141.562693999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00037-of-00132-cb1631efc656e9e0.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1009078260,
+   "seconds": 31547.314935,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00038-of-00132-35fac962de48cf19.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 676500705,
+   "seconds": 21148.495864,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00039-of-00132-e0ef969055749058.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 585823708,
+   "seconds": 18328.301116,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00040-of-00132-5b7a21aba2a04ca4.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 960107232,
+   "seconds": 30010.321114,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00041-of-00132-1cb9eb7441eaa671.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 783184368,
+   "seconds": 24468.090642,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00042-of-00132-09754522cdc775b4.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 691245980,
+   "seconds": 21595.554191000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00043-of-00132-08545d4697514a2e.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 589020396,
+   "seconds": 18399.31727,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00044-of-00132-931ecea7f461f971.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 767028242,
+   "seconds": 23959.556634,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00045-of-00132-c18be4ef751fd4f0.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 580326085,
+   "seconds": 18127.064358,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00046-of-00132-437522a6bed0efe5.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 419986691,
+   "seconds": 13117.74049,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00047-of-00132-485b04ae277bb9dc.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 788179186,
+   "seconds": 24628.046201,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00048-of-00132-811cb3e81731c3bc.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 603326705,
+   "seconds": 18847.981447,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00049-of-00132-44ae0150dbd618b6.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 555165643,
+   "seconds": 17342.953438,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00050-of-00132-f8190daefe48ac53.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 587996707,
+   "seconds": 18449.450695,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00051-of-00132-2d05563ed2d2b654.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 751779014,
+   "seconds": 23594.24745,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00052-of-00132-a1655818ab8da420.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 629081567,
+   "seconds": 19733.007392,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00053-of-00132-3cd9609c7b5ef5ad.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 391147249,
+   "seconds": 12257.515446,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00054-of-00132-497101d9be09b3d9.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1419266668,
+   "seconds": 45988.598966,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00055-of-00132-0c89448d76c24507.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 991738479,
+   "seconds": 32094.013140999996,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00056-of-00132-e4c40b8684a91681.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 845413842,
+   "seconds": 27461.114394,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00057-of-00132-da32d74a96d2e081.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1453077510,
+   "seconds": 47876.423769999994,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00058-of-00132-4b9fe0ccf5a875a4.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1428699617,
+   "seconds": 47803.423198000004,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00059-of-00132-ed1bc1ddb0665ada.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1241102117,
+   "seconds": 40840.959705,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00060-of-00132-0d25757946f5adb7.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 1172444695,
+   "seconds": 38888.701889,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00061-of-00132-17df44121357c022.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1239898556,
+   "seconds": 41287.200912,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00062-of-00132-8d35a5c2d6f6597d.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 912623535,
+   "seconds": 30817.896332,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00063-of-00132-966edbc3002d88fb.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 727751676,
+   "seconds": 24065.223191,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00064-of-00132-e7992d53f878fb7b.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 843814343,
+   "seconds": 26359.92278,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00065-of-00132-f539c4d17548c465.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 603267643,
+   "seconds": 18845.297441000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00066-of-00132-7254fb465c6dd425.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 461584899,
+   "seconds": 14420.432676999999,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00067-of-00132-40d22a0d357abfa6.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 712720154,
+   "seconds": 22279.518015,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00068-of-00132-084d7567140bf324.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 498640085,
+   "seconds": 15576.810694,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00069-of-00132-8153f9a912e1a54f.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 412517084,
+   "seconds": 12884.245997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00070-of-00132-1c434b351b7af51c.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 660883151,
+   "seconds": 21805.465268999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00071-of-00132-73715944b05aa73c.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 725803628,
+   "seconds": 23990.516186,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00072-of-00132-026616327775ced6.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 545662075,
+   "seconds": 18121.317756999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00073-of-00132-fbda0459f6ac5a1d.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 748514857,
+   "seconds": 24137.724541,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00074-of-00132-563389682cdc2d1d.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 844443994,
+   "seconds": 26530.208017999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00075-of-00132-7620c9855de421de.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 625220300,
+   "seconds": 19557.284887,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00076-of-00132-2a0ea21635fd6b17.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 440255825,
+   "seconds": 13786.056481000001,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00077-of-00132-4cf1b0eae77eaa82.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 1132561120,
+   "seconds": 35383.311629,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00078-of-00132-cdfbd4357a5a497b.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 661688268,
+   "seconds": 20668.892684,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00079-of-00132-1a7d551917b942d1.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 634345332,
+   "seconds": 19815.303545000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00080-of-00132-c3340a2d5f97c600.parquet",
+   "rows": 1423,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 623677555,
+   "seconds": 19491.703304000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00081-of-00132-0ca505daf3cd97f8.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 621881680,
+   "seconds": 19450.468062,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00082-of-00132-e466091cd35c24db.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 517511338,
+   "seconds": 16186.480124,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00083-of-00132-76270aa88861b4e8.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 470366602,
+   "seconds": 14799.916429,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00084-of-00132-457181c4a99580e8.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 990185564,
+   "seconds": 31388.446619000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00085-of-00132-4c9fe3b9673f5e84.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 681658058,
+   "seconds": 21676.859335999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00086-of-00132-0a3e27aefd73531e.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 524266985,
+   "seconds": 16724.135821,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00087-of-00132-1435bc4298688cd8.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 870436027,
+   "seconds": 27609.441017999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00088-of-00132-b9b1375f9878e0b2.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 600333705,
+   "seconds": 18901.614553,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00089-of-00132-9be37ab9cc6f7191.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 612884448,
+   "seconds": 19281.36812,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00090-of-00132-5d3908d18500759e.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 544649768,
+   "seconds": 17019.028079,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00091-of-00132-d63d36e0521d9aa2.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 615865442,
+   "seconds": 19236.203379,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00092-of-00132-de461ed469db3417.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 498844700,
+   "seconds": 15580.371683000001,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00093-of-00132-c793f920f5e35ae6.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 331410341,
+   "seconds": 10349.597028,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00094-of-00132-42d3c8ea092b4179.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 590418389,
+   "seconds": 18671.899461,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00095-of-00132-5a192e1764953988.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 863911302,
+   "seconds": 26994.290063,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00096-of-00132-c069cc465353d4f7.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 628326291,
+   "seconds": 19626.522524,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00097-of-00132-9335aee8c952fe64.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 541081479,
+   "seconds": 16900.658004999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00098-of-00132-fce1235c480ab45d.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 688284291,
+   "seconds": 21553.490801,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00099-of-00132-8818ae7c1ad46164.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 691802432,
+   "seconds": 21685.517637999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00100-of-00132-084145123319bb42.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 547256672,
+   "seconds": 17242.751389999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00101-of-00132-eb531eca905234f8.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 466513179,
+   "seconds": 14721.039552,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00102-of-00132-eda431b8cbe237ce.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 775171644,
+   "seconds": 24217.637581,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00103-of-00132-9a70a6cad474c3dc.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 557241264,
+   "seconds": 17409.510145,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00104-of-00132-88427ed4a43c35d3.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 418170085,
+   "seconds": 13064.921067,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00105-of-00132-c4027a0323565f59.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 747381496,
+   "seconds": 23345.515485,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00106-of-00132-4c09b82cc79a09fd.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 554614862,
+   "seconds": 17322.939184000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00107-of-00132-d3490ea2a8dfe28c.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 519815998,
+   "seconds": 16236.908546000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00108-of-00132-bfd55b08e1a53b3c.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 480684036,
+   "seconds": 15013.37166,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00109-of-00132-7e7b487adf7f83b4.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 529448313,
+   "seconds": 16537.593881,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00110-of-00132-6f6ef2459c07d977.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 432228710,
+   "seconds": 13499.918499000001,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00111-of-00132-525a8ca0f8565922.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 302379830,
+   "seconds": 9453.28473,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00112-of-00132-ef0d322892837ba2.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 886505637,
+   "seconds": 28287.99108,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00113-of-00132-3f354655eaf25a9b.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 605266651,
+   "seconds": 19193.792183,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00114-of-00132-fc98b00ce13df8d6.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 529539759,
+   "seconds": 16748.504553,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00115-of-00132-bbda1ea91dccb154.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 757050067,
+   "seconds": 23653.216254,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00116-of-00132-7be65bedde15a6d5.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 619680363,
+   "seconds": 19356.229125,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00117-of-00132-8b686b14f6c97547.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 573726402,
+   "seconds": 17920.545972,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00118-of-00132-b9795057a9643e59.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 581204321,
+   "seconds": 18157.963762,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00119-of-00132-b243b6f758e77f1b.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 747198444,
+   "seconds": 23345.603632,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00120-of-00132-03287a8d19647a17.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 615008343,
+   "seconds": 19216.726773,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00121-of-00132-d5265cd4353ff91a.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 401528568,
+   "seconds": 12547.418233,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00122-of-00132-ee279c1fc59c721a.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 917891522,
+   "seconds": 28692.858958,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00123-of-00132-d9e37f52f4593b07.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 651599925,
+   "seconds": 20354.954733,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00124-of-00132-83e1dbc92cca203d.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 521167730,
+   "seconds": 16279.469877,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00125-of-00132-64b1406107e29e2e.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 680848929,
+   "seconds": 21280.967748,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00126-of-00132-ee5263b05b3b4995.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 730515073,
+   "seconds": 22852.03005,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00127-of-00132-fb89f8bf2c403559.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 605807176,
+   "seconds": 18957.531917,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00128-of-00132-94103f51e95535cb.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 624895599,
+   "seconds": 19609.198104000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00129-of-00132-9e45141c8109b477.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 771522563,
+   "seconds": 24452.05644,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00130-of-00132-cc325a0395702c0c.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 591265348,
+   "seconds": 18698.706933999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00131-of-00132-13118eba5f788e61.parquet",
+   "rows": 1422,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 412523163,
+   "seconds": 12948.263472999999,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00000-of-00012-91e6174ad3aace19.parquet",
+   "rows": 1957,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 1449452903,
+   "seconds": 47827.980262,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00001-of-00012-46680fb9738a4c70.parquet",
+   "rows": 1957,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 876198009,
+   "seconds": 27408.04171,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00002-of-00012-3ac2a132f8c34654.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 894681328,
+   "seconds": 28671.611112,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00003-of-00012-551feb02a1bc1997.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 986240044,
+   "seconds": 30829.059776000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00004-of-00012-6e9b2322deab3c96.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 928558991,
+   "seconds": 29334.298142999996,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00005-of-00012-2d34ae8c5a8cd1c2.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 1445326065,
+   "seconds": 47529.208811000004,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00006-of-00012-d60f1b3461f6006f.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 827818518,
+   "seconds": 26411.209193000002,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00007-of-00012-50e92fb8c398963c.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 988866887,
+   "seconds": 31112.806205999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00008-of-00012-fa54b7732dd5cd95.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 822480398,
+   "seconds": 25767.490945999998,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00009-of-00012-36e5d56109313571.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 787929023,
+   "seconds": 24653.490427999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00010-of-00012-7071951d803b427c.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 840077945,
+   "seconds": 26396.757305,
+   "null_durations": 0
+  },
+  {
+   "path": "data/validation-00011-of-00012-e202b959bd3c9b87.parquet",
+   "rows": 1956,
+   "row_groups": 2,
+   "bytes_fetched": 131072,
+   "file_bytes": 854146729,
+   "seconds": 26778.477499,
+   "null_durations": 0
+  }
+ ],
+ "n_files": 157,
+ "rows": 234732,
+ "seconds": 3733341.664733,
+ "null_durations": 0,
+ "bytes_fetched": 16515072,
+ "bytes_in_files": 117190597305,
+ "measured_at": "2026-10-30T13:32:23Z",
+ "api": {
+  "id": "tarteel-ai/everyayah",
+  "sha": "6ea510862d64f59e555a4a8363eebc0f415621df",
+  "lastModified": "2026-09-17T16:33:10.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": null,
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "task_categories:automatic-speech-recognition",
+   "language:ar",
+   "size_categories:100K<n<1M",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 159
+ }
+}

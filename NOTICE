@@ -1,0 +1,18 @@
+Open Arabic Speech Hours Counter (arabic-speech-hours) by Bayanat Labs
+Copyright 2026 Bayanat Labs
+
+Code (src/, scripts/, tests/, embed/, space/*.js, space/*.html, space/*.css, .github/): Apache License 2.0 (LICENSE).
+Data, configuration and documentation (data/, feed/, evidence/, qa/, config/, docs/, README.md, CHANGELOG.md,
+the page text in space/): Creative Commons Attribution 4.0 International (LICENSES/CC-BY-4.0.txt).
+
+config/corpora.yaml quotes short spans of public publisher pages, dataset cards and papers, named with
+their URLs, as evidence for licence and hours figures; those spans remain under their owners' terms.
+Each counted corpus keeps its own licence (LICENSE-sources.md). The counter redistributes no audio or transcripts.
+
+The static page, as published in the Space, bundles the IBM Plex Sans Arabic font, version 1.005: the unmodified files
+IBMPlexSansArabic-Regular.woff2 and IBMPlexSansArabic-SemiBold.woff2 from IBM's npm package
+@ibm/plex-sans-arabic 1.1.0. Copyright 2017 IBM Corp. with Reserved Font Name "Plex".
+Licensed under the SIL Open Font License, Version 1.1 (fonts/OFL.txt).
+
+Licence classes are informational and are not legal advice. The Bayanat Labs name, logo and project
+branding are not licensed under the Apache License 2.0 or under CC BY 4.0.

@@ -1,0 +1,103 @@
+# Hour measurements from published metadata. Audio files are never fetched: only duration columns,
+# duration manifests, release statistics or dataset-viewer column statistics are read.
+# Revisions are pinned; a refresh with --latest re-reads the current revision.
+version: 1
+measurements:
+  common-voice-ar-27:
+    kind: cv_release_stats
+    url: https://raw.githubusercontent.com/common-voice/cv-dataset/main/datasets/scripted-speech/cv-corpus-27.0-2026-09-11.json
+    locale: ar
+  yodas3-ar:
+    kind: hf_parquet_columns
+    repo: espnet/yodas3
+    revision: 81d802f45a1c1e1f5331260484dacf1fbea81981
+    pattern: data/ar/metadata/*.parquet
+    duration_col: length
+    id_col: id
+    extra_cols: [locale_lang]
+    locale_col: locale_lang   # the json record also gets hours by uploader locale (ar, other, not given)
+    locale_primary: ar
+  yodas2-ar:
+    kind: hf_duration_txt
+    repo: espnet/yodas2
+    revision: 631fc446cb1a41ee93a1d390a167c6e08c2597a3
+    pattern: data/ar000/duration/*.txt
+  fleurs-ar:
+    kind: delimited
+    urls:
+      - https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/train.tsv
+      - https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/dev.tsv
+      - https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/test.tsv
+    delimiter: "\t"
+    header: false
+    duration_field: 5
+    scale: 0.0000625   # num_samples / 16000
+    id_field: 1
+  clartts:
+    kind: hf_viewer_stats
+    repo: MBZUAI/ClArTTS
+    column: duration
+    splits: [[default, train], [default, test]]
+  casablanca:
+    kind: hf_viewer_stats
+    repo: UBC-NLP/Casablanca
+    column: duration
+    splits: [[Algeria, validation], [Algeria, test], [Egypt, validation], [Egypt, test], [Jordan, validation], [Jordan, test],
+             [Mauritania, validation], [Mauritania, test], [Morocco, validation], [Morocco, test], [Palestine, validation],
+             [Palestine, test], [UAE, validation], [UAE, test], [Yemen, validation], [Yemen, test]]
+  tarteel-recitations:
+    kind: hf_parquet_columns
+    repo: tarteel-ai/everyayah
+    revision: 6ea510862d64f59e555a4a8363eebc0f415621df
+    pattern: data/*.parquet
+    duration_col: duration
+  mixat:
+    kind: hf_parquet_columns
+    repo: MBZUAI/MIXAT
+    revision: 66d4f5386e89710ad8fb2a1f54dd5ebed890ba7a
+    pattern: data/*.parquet
+    duration_col: duration_ms
+    scale: 0.001
+  mixat-copy-sqrk:
+    kind: hf_parquet_columns
+    repo: sqrk/mixat-tri
+    revision: ea2f4bbb3f2cc52bfbc7dfcc50cf1a27394f2eed
+    pattern: data/*.parquet
+    duration_col: duration_ms
+    scale: 0.001
+  masc-transcribed:
+    kind: delimited
+    urls:
+      - https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/train/train.csv
+      - https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/dev/dev.csv
+      - https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/test/test.csv
+    delimiter: ","
+    header: true
+    duration_field: duration
+    id_field: video_id
+    group_field: type
+  adi20-53h-manifest:
+    kind: delimited
+    urls:
+      - https://huggingface.co/datasets/ArabicSpeech/ADI20/resolve/76c04b679516502b32cd8c1cd99da0cd939d3c18/adi20_53h.csv
+    delimiter: ","
+    header: true
+    duration_field: duration
+    id_field: ID
+    id_prefix_len: 11   # the first 11 characters of a segment ID are the source video ID
+    group_field: dialect
+  adi17-devtest:
+    kind: hf_parquet_ids
+    repo: ArabicSpeech/ADI17
+    revision: bfb3990fb38b199806c1f994928d34847e3d10c6
+    patterns: [data/dev-*.parquet, data/test-*.parquet]
+    id_col: id
+    group_col: dialect
+    # segment IDs are <video id>_<start>-<end> with start and end in hundredths of a second
+    id_regex: '^(?P<vid>.{11})_(?P<start>\d{6})-(?P<end>\d{6})'
+    id_time_scale: 0.01
+  mediaspeech-ar:
+    kind: hf_viewer_stats
+    repo: ymoslem/MediaSpeech
+    column: audio   # the viewer reports audio durations in seconds for audio columns
+    splits: [[ar, train]]

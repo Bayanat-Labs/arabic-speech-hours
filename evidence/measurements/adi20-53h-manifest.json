@@ -1,0 +1,32 @@
+{
+ "id": "adi20-53h-manifest",
+ "spec": {
+  "kind": "delimited",
+  "urls": [
+   "https://huggingface.co/datasets/ArabicSpeech/ADI20/resolve/76c04b679516502b32cd8c1cd99da0cd939d3c18/adi20_53h.csv"
+  ],
+  "delimiter": ",",
+  "header": true,
+  "duration_field": "duration",
+  "id_field": "ID",
+  "id_prefix_len": 11,
+  "group_field": "dialect"
+ },
+ "kind": "delimited",
+ "parts": [
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/ArabicSpeech/ADI20/resolve/76c04b679516502b32cd8c1cd99da0cd939d3c18/adi20_53h.csv",
+   "sha256": "2e3fae3900a3b78df1bdea03ce8b825ba00a5710380c43e7f29dc85b8079a8e4",
+   "bytes": 16723189,
+   "duration_field": "duration",
+   "scale": 1.0,
+   "rows": 467442,
+   "seconds": 3815872.8375100293,
+   "measured_at": "2026-10-30T12:58:14Z"
+  }
+ ],
+ "rows": 467442,
+ "seconds": 3815872.8375100293,
+ "measured_at": "2026-10-30T12:58:14Z"
+}

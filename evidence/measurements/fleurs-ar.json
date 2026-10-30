@@ -1,0 +1,55 @@
+{
+ "id": "fleurs-ar",
+ "spec": {
+  "kind": "delimited",
+  "urls": [
+   "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/train.tsv",
+   "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/dev.tsv",
+   "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/test.tsv"
+  ],
+  "delimiter": "\t",
+  "header": false,
+  "duration_field": 5,
+  "scale": 6.25e-05,
+  "id_field": 1
+ },
+ "kind": "delimited",
+ "parts": [
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/train.tsv",
+   "sha256": "416fbb37f2d4226b5e1e393dafa12920c5ea596cada371d115e3a1c13b9b8c8b",
+   "bytes": 1528714,
+   "duration_field": 5,
+   "scale": 6.25e-05,
+   "rows": 2104,
+   "seconds": 21778.0691875,
+   "measured_at": "2026-10-30T12:57:46Z"
+  },
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/dev.tsv",
+   "sha256": "3c9ea61dfd884a47e03ee33c4ef601bed0a1142ce7e5b279cccd0cf321792913",
+   "bytes": 214607,
+   "duration_field": 5,
+   "scale": 6.25e-05,
+   "rows": 295,
+   "seconds": 3147.8199999999997,
+   "measured_at": "2026-10-30T12:57:48Z"
+  },
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ar_eg/test.tsv",
+   "sha256": "af9b9aa3f99c39f90e7f8417f10f2f45a7f783441c6a27abfc2c1bededed4af1",
+   "bytes": 324236,
+   "duration_field": 5,
+   "scale": 6.25e-05,
+   "rows": 428,
+   "seconds": 4685.4670625,
+   "measured_at": "2026-10-30T12:57:50Z"
+  }
+ ],
+ "rows": 2827,
+ "seconds": 29611.35625,
+ "measured_at": "2026-10-30T12:57:50Z"
+}

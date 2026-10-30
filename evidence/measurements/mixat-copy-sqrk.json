@@ -1,0 +1,218 @@
+{
+ "id": "mixat-copy-sqrk",
+ "spec": {
+  "kind": "hf_parquet_columns",
+  "repo": "sqrk/mixat-tri",
+  "revision": "ea2f4bbb3f2cc52bfbc7dfcc50cf1a27394f2eed",
+  "pattern": "data/*.parquet",
+  "duration_col": "duration_ms",
+  "scale": 0.001
+ },
+ "kind": "hf_parquet_columns",
+ "repo": "sqrk/mixat-tri",
+ "revision": "ea2f4bbb3f2cc52bfbc7dfcc50cf1a27394f2eed",
+ "pattern": "data/*.parquet",
+ "columns_read": [
+  "duration_ms"
+ ],
+ "duration_column": "duration_ms",
+ "scale": 0.001,
+ "files": [
+  {
+   "path": "data/test-00000-of-00008.parquet",
+   "rows": 199,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 408097039,
+   "seconds": 2683.5830000000005,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00001-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 422949141,
+   "seconds": 2758.103,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00002-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 397849311,
+   "seconds": 2628.8109999999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00003-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 368188508,
+   "seconds": 2498.197,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00004-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 450363149,
+   "seconds": 2889.924,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00005-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 406602404,
+   "seconds": 2622.928000000001,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00006-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 385917548,
+   "seconds": 2553.8680000000004,
+   "null_durations": 0
+  },
+  {
+   "path": "data/test-00007-of-00008.parquet",
+   "rows": 198,
+   "row_groups": 2,
+   "bytes_fetched": 98304,
+   "file_bytes": 375257143,
+   "seconds": 2730.969,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00000-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 361393315,
+   "seconds": 2847.995,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00001-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 368215797,
+   "seconds": 2350.337,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00002-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 403326156,
+   "seconds": 2614.188,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00003-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 446456757,
+   "seconds": 2836.4309999999996,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00004-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 371113995,
+   "seconds": 2367.444,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00005-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 412146013,
+   "seconds": 2831.5029999999997,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00006-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 474171086,
+   "seconds": 3239.856,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00007-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 511338327,
+   "seconds": 3190.842,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00008-of-00011.parquet",
+   "rows": 339,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 559594593,
+   "seconds": 3735.426,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00009-of-00011.parquet",
+   "rows": 338,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 452462994,
+   "seconds": 2928.797,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00010-of-00011.parquet",
+   "rows": 338,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 479954174,
+   "seconds": 3370.919,
+   "null_durations": 0
+  }
+ ],
+ "n_files": 19,
+ "rows": 5312,
+ "seconds": 53680.121,
+ "null_durations": 0,
+ "bytes_fetched": 2588672,
+ "bytes_in_files": 8055397450,
+ "measured_at": "2026-10-30T13:19:16Z",
+ "api": {
+  "id": "sqrk/mixat-tri",
+  "sha": "ea2f4bbb3f2cc52bfbc7dfcc50cf1a27394f2eed",
+  "lastModified": "2024-11-06T10:04:59.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": "cc-by-nc-sa-4.0",
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "license:cc-by-nc-sa-4.0",
+   "size_categories:1K<n<10K",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 21
+ }
+}

@@ -1,0 +1,57 @@
+# Licence classes used by the counter. A corpus gets exactly one class for its audio.
+# Hours of different classes are never added together.
+version: 2026.10.30
+classes:
+  open-commercial:
+    label: Open, commercial use allowed
+    label_ar: مفتوح ويسمح بالاستخدام التجاري
+    rule: CC0, CC BY (any version), CC BY-SA, ODC-By, PDDL or public domain, or a software licence (MIT, Apache, BSD) declared for the data
+    in_headline: true
+  open-noncommercial:
+    label: Open, non-commercial only
+    label_ar: مفتوح لغير الأغراض التجارية فقط
+    rule: any CC BY-NC variant without ND (CC BY-NC, CC BY-NC-SA)
+  no-derivatives:
+    label: No derivatives
+    label_ar: لا يسمح بالأعمال المشتقة
+    rule: any ND variant (CC BY-ND, CC BY-NC-ND); ND decides the class even when NC is also present
+  research-or-request:
+    label: Research use or on request
+    label_ar: للبحث أو عند الطلب
+    rule: a research-use licence agreement, data use agreement, request form or request process, or a publisher statement limiting use to research
+  manifests-only:
+    label: Manifests only (no audio)
+    label_ar: قوائم فقط (بلا صوت)
+    rule: published identifiers, timestamps or labels that point to audio the corpus does not distribute
+  disputed:
+    label: Disputed
+    label_ar: متنازع عليه
+    rule: the publisher's own statements give two different licences for the same audio
+  unknown:
+    label: No licence found
+    label_ar: لا يوجد ترخيص
+    rule: no licence statement found for the audio
+# How a declared licence string maps to a class (lower case, SPDX-like). First match wins.
+# A row's licence_class_override sets research-or-request instead when the publisher's page requires a signed
+# agreement or a request process before the audio is shared; the quote that says so is the row's override_quote
+# (or its hours quote) and must appear in the saved page.
+string_rules:
+  - {pattern: '^cc-by-nc-nd', class: no-derivatives}
+  - {pattern: '^cc-by-nd', class: no-derivatives}
+  - {pattern: '^cc-by-nc', class: open-noncommercial}
+  - {pattern: '^(cc0|cc-0|cc0-1\.0)', class: open-commercial}
+  - {pattern: '^cc-by-sa', class: open-commercial}
+  - {pattern: '^cc-by(-\d|$)', class: open-commercial}
+  - {pattern: '^(odc-by|pddl|public-domain)', class: open-commercial}
+  - {pattern: '^(mit|apache-2\.0|bsd)', class: open-commercial, flag: software_licence_on_data}
+  - {pattern: '^research-use', class: research-or-request}
+  - {pattern: '^(data-use-agreement|request-form)', class: research-or-request}
+  - {pattern: '^manifests-only', class: manifests-only}
+  - {pattern: '^none$', class: unknown}
+# Hour types are stored separately and never summed across types.
+hour_types:
+  released_audio: Audio hours distributed by the publisher (the headline basis)
+  transcribed: Hours of segments that carry a transcript
+  validated: Hours that passed the publisher's validation (Common Voice)
+  clean: Hours the publisher defines as clean
+  manifest: Hours listed in a manifest without distributed audio

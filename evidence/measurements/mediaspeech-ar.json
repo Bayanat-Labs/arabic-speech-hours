@@ -1,0 +1,60 @@
+{
+ "id": "mediaspeech-ar",
+ "spec": {
+  "kind": "hf_viewer_stats",
+  "repo": "ymoslem/MediaSpeech",
+  "column": "audio",
+  "splits": [
+   [
+    "ar",
+    "train"
+   ]
+  ]
+ },
+ "kind": "hf_viewer_stats",
+ "repo": "ymoslem/MediaSpeech",
+ "revision": "4008a968760f2187b0c5b2b2db965f1283433059",
+ "column": "audio",
+ "scale": 1.0,
+ "parts": [
+  {
+   "config": "ar",
+   "split": "train",
+   "num_examples": 2505,
+   "nan_count": 0,
+   "mean": 14.37321,
+   "min": 5.3,
+   "max": 14.9,
+   "seconds": 36004.89105,
+   "partial": false
+  }
+ ],
+ "rows": 2505,
+ "seconds": 36004.89105,
+ "measured_at": "2026-10-30T13:23:29Z",
+ "api": {
+  "id": "ymoslem/MediaSpeech",
+  "sha": "4008a968760f2187b0c5b2b2db965f1283433059",
+  "lastModified": "2024-03-25T19:41:06.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": "cc-by-4.0",
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "task_categories:automatic-speech-recognition",
+   "task_categories:text-to-speech",
+   "language:ar",
+   "language:fr",
+   "language:es",
+   "language:tr",
+   "license:cc-by-4.0",
+   "size_categories:10K<n<100K",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 10
+ },
+ "note": "seconds = mean x non-null count; the viewer rounds the mean to 5 decimals"
+}

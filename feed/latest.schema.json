@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://huggingface.co/datasets/Bayanat-Labs/arabic-speech-hours/resolve/main/feed/latest.schema.json",
+  "title": "Open Arabic Speech Hours Counter: latest figures",
+  "type": "object",
+  "required": ["schema_version", "as_of", "as_of_label", "headline_hours", "headline", "by_class", "n_corpora",
+               "page_url", "licence", "citation", "publisher"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "as_of": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "as_of_label": {"type": "string"},
+    "headline_hours": {"type": "integer", "minimum": 0},
+    "headline": {
+      "type": "object",
+      "required": ["licence_class", "hour_type", "hours", "hours_rounded", "hours_gross", "n_corpora",
+                   "youtube_derived_hours", "youtube_derived_share", "non_msa_dialect_labelled_hours"],
+      "properties": {
+        "label": {"type": "string"},
+        "licence_class": {"const": "open-commercial"},
+        "hour_type": {"const": "released_audio"},
+        "hours": {"type": "number", "minimum": 0},
+        "hours_rounded": {"type": "integer", "minimum": 0},
+        "hours_gross": {"type": "number", "minimum": 0},
+        "n_corpora": {"type": "integer", "minimum": 0},
+        "youtube_derived_hours": {"type": "number", "minimum": 0},
+        "youtube_derived_share": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "non_msa_dialect_labelled_hours": {"type": "number", "minimum": 0},
+        "non_msa_dialect_labelled_share": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "by_class": {
+      "type": "object",
+      "description": "Released audio hours per licence class, overlap-adjusted. Classes are never added together.",
+      "propertyNames": {"enum": ["open-commercial", "open-noncommercial", "no-derivatives", "research-or-request",
+                                  "manifests-only", "disputed", "unknown"]},
+      "additionalProperties": {"type": "number", "minimum": 0}
+    },
+    "by_class_detail": {"type": "object"},
+    "other_hour_types": {"type": "object"},
+    "by_dialect_group": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}},
+    "by_genre": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}},
+    "by_corpus": {"type": "array", "items": {"type": "object", "required": ["corpus_id", "hours"]}},
+    "n_corpora": {"type": "integer", "minimum": 0},
+    "n_candidates_listed": {"type": "integer", "minimum": 0},
+    "page_url": {"type": "string", "format": "uri"},
+    "dataset_url": {"type": "string", "format": "uri"},
+    "changelog_url": {"type": "string", "format": "uri"},
+    "licence": {"const": "CC-BY-4.0"},
+    "citation": {"type": "string"},
+    "publisher": {"const": "Bayanat Labs"}
+  }
+}

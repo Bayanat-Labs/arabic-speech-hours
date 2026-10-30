@@ -1,0 +1,43 @@
+# Licence and hours evidence pages. Each page is saved as served and as rendered text, with SHA-256
+# hashes and the retrieval time in evidence/index.jsonl. Quotes in corpora.yaml must appear verbatim
+# (after whitespace normalisation) in the rendered text of the named snapshot.
+snapshots:
+  common-voice-ar/mdc-page: https://mozilladatacollective.com/datasets/cmu5wom3z00ceo107guxtg4xa
+  common-voice-ar/stats-repo: https://github.com/common-voice/cv-dataset
+  yodas3-ar/hf-card: https://huggingface.co/datasets/espnet/yodas3
+  yodas2-ar/hf-card: https://huggingface.co/datasets/espnet/yodas2
+  masc/ieee-dataport: https://ieee-dataport.org/open-access/masc-massive-arabic-speech-corpus
+  masc/copy-pain: https://huggingface.co/datasets/pain/MASC
+  masc/copy-hirundo: https://huggingface.co/datasets/hirundo-io/MASC
+  masc/copy-abdusah: https://huggingface.co/datasets/abdusah/masc
+  masc/copy-mohamedrashad: https://huggingface.co/datasets/MohamedRashad/MASC-Arabic
+  sada/kaggle: https://www.kaggle.com/datasets/sdaiancai/sada2022
+  sada/copy-khaledalganem: https://huggingface.co/datasets/khaledalganem/sada2022
+  sada/copy-m6011: https://huggingface.co/datasets/m6011/sada2022
+  qasr/hf-card: https://huggingface.co/datasets/QCRI/QASR
+  qasr/paper: https://arxiv.org/abs/2106.13000
+  mgb2/hf-card: https://huggingface.co/datasets/QCRI/mgb2
+  mgb2/paper: https://arxiv.org/abs/1609.05625
+  adi17/hf-page: https://huggingface.co/datasets/ArabicSpeech/ADI17
+  adi20/hf-card: https://huggingface.co/datasets/ArabicSpeech/ADI20
+  adi20/paper: https://arxiv.org/html/2511.10070v1
+  adi20/copy-nadi-micro: https://huggingface.co/datasets/UBC-NLP/NADI_2026_ADI20_micro
+  casablanca/hf-card: https://huggingface.co/datasets/UBC-NLP/Casablanca
+  mixat/hf-card: https://huggingface.co/datasets/MBZUAI/MIXAT
+  mixat/copy-sqrk: https://huggingface.co/datasets/sqrk/mixat-tri
+  mixat/paper: https://arxiv.org/abs/2405.02578
+  arvoice/hf-card: https://huggingface.co/datasets/MBZUAI/ArVoice
+  clartts/hf-card: https://huggingface.co/datasets/MBZUAI/ClArTTS
+  arpod2/zenodo: https://zenodo.org/records/14803541
+  tarteel-recitations/hf-card: https://huggingface.co/datasets/tarteel-ai/everyayah
+  arabic-speech-corpus/home: http://en.arabicspeechcorpus.com/
+  arabic-speech-corpus/hf-card: https://huggingface.co/datasets/halabi2016/arabic_speech_corpus
+  arabic-speech-corpus/thesis: http://en.arabicspeechcorpus.com/Nawar%20Halabi%20PhD%20Thesis%20Revised.pdf
+  fleurs-ar/hf-card: https://huggingface.co/datasets/google/fleurs
+  fleurs-ar/paper: https://arxiv.org/abs/2205.12446
+  mediaspeech-ar/openslr: https://www.openslr.org/108/
+  mediaspeech-ar/github: https://github.com/NTRLab/MediaSpeech
+  mediaspeech-ar/copy-ymoslem: https://huggingface.co/datasets/ymoslem/MediaSpeech
+  linto-tn/hf-card: https://huggingface.co/datasets/linagora/linto-dataset-audio-ar-tn
+  menaspeechbank/hf-card: https://huggingface.co/datasets/QCRI/MenaSpeechBank
+  bayanat-channel-pairs/hf-card: https://huggingface.co/datasets/Bayanat-Labs/arabic-asr-channel-pairs

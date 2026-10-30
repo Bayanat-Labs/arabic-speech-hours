@@ -1,0 +1,1948 @@
+{
+ "id": "yodas3-ar",
+ "spec": {
+  "kind": "hf_parquet_columns",
+  "repo": "espnet/yodas3",
+  "revision": "81d802f45a1c1e1f5331260484dacf1fbea81981",
+  "pattern": "data/ar/metadata/*.parquet",
+  "duration_col": "length",
+  "id_col": "id",
+  "extra_cols": [
+   "locale_lang"
+  ],
+  "locale_col": "locale_lang",
+  "locale_primary": "ar"
+ },
+ "kind": "hf_parquet_columns",
+ "repo": "espnet/yodas3",
+ "revision": "81d802f45a1c1e1f5331260484dacf1fbea81981",
+ "pattern": "data/ar/metadata/*.parquet",
+ "columns_read": [
+  "length",
+  "id",
+  "locale_lang"
+ ],
+ "duration_column": "length",
+ "scale": 1.0,
+ "files": [
+  {
+   "path": "data/ar/metadata/0000.parquet",
+   "rows": 674,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8720174,
+   "seconds": 578775.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0001.parquet",
+   "rows": 719,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8714712,
+   "seconds": 595369.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0002.parquet",
+   "rows": 582,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6673029,
+   "seconds": 547939.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0003.parquet",
+   "rows": 675,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8723522,
+   "seconds": 578339.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0004.parquet",
+   "rows": 711,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9362882,
+   "seconds": 590882.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0005.parquet",
+   "rows": 694,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8871846,
+   "seconds": 580148.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0006.parquet",
+   "rows": 644,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9121018,
+   "seconds": 599942.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0007.parquet",
+   "rows": 678,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8367942,
+   "seconds": 577853.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0008.parquet",
+   "rows": 735,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 10156325,
+   "seconds": 583549.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0009.parquet",
+   "rows": 692,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9365828,
+   "seconds": 562996.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0010.parquet",
+   "rows": 681,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8683372,
+   "seconds": 586733.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0011.parquet",
+   "rows": 757,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8823773,
+   "seconds": 598609.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0012.parquet",
+   "rows": 832,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9725890,
+   "seconds": 599961.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0013.parquet",
+   "rows": 775,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8226984,
+   "seconds": 577038.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0014.parquet",
+   "rows": 551,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8322203,
+   "seconds": 555267.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0015.parquet",
+   "rows": 819,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8597111,
+   "seconds": 592203.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0016.parquet",
+   "rows": 700,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9070270,
+   "seconds": 571916.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0017.parquet",
+   "rows": 705,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8533367,
+   "seconds": 598427.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0018.parquet",
+   "rows": 567,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9310266,
+   "seconds": 564374.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0019.parquet",
+   "rows": 779,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9123624,
+   "seconds": 579945.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0020.parquet",
+   "rows": 680,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9048064,
+   "seconds": 595454.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0021.parquet",
+   "rows": 734,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9233098,
+   "seconds": 576645.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0022.parquet",
+   "rows": 555,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6885647,
+   "seconds": 540139.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0023.parquet",
+   "rows": 506,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9688683,
+   "seconds": 583767.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0024.parquet",
+   "rows": 684,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9680033,
+   "seconds": 565858.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0025.parquet",
+   "rows": 634,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9443419,
+   "seconds": 577069.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0026.parquet",
+   "rows": 619,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8215070,
+   "seconds": 572486.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0027.parquet",
+   "rows": 499,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7585229,
+   "seconds": 565178.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0028.parquet",
+   "rows": 607,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8477541,
+   "seconds": 583927.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0029.parquet",
+   "rows": 487,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9163127,
+   "seconds": 585242.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0030.parquet",
+   "rows": 649,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8840685,
+   "seconds": 567665.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0031.parquet",
+   "rows": 653,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9154327,
+   "seconds": 574033.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0032.parquet",
+   "rows": 630,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8462941,
+   "seconds": 581235.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0033.parquet",
+   "rows": 607,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9000821,
+   "seconds": 580603.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0034.parquet",
+   "rows": 602,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7745227,
+   "seconds": 562597.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0035.parquet",
+   "rows": 547,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9309881,
+   "seconds": 580116.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0036.parquet",
+   "rows": 647,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9054017,
+   "seconds": 563742.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0037.parquet",
+   "rows": 669,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8462322,
+   "seconds": 567455.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0038.parquet",
+   "rows": 657,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9098771,
+   "seconds": 586475.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0039.parquet",
+   "rows": 736,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8911361,
+   "seconds": 561509.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0040.parquet",
+   "rows": 711,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9346180,
+   "seconds": 590422.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0041.parquet",
+   "rows": 675,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8841543,
+   "seconds": 560524.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0042.parquet",
+   "rows": 564,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9359631,
+   "seconds": 575687.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0043.parquet",
+   "rows": 683,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9493133,
+   "seconds": 587522.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0044.parquet",
+   "rows": 699,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9117111,
+   "seconds": 576568.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0045.parquet",
+   "rows": 748,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9250790,
+   "seconds": 580225.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0046.parquet",
+   "rows": 678,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8749927,
+   "seconds": 597422.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0047.parquet",
+   "rows": 698,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7858757,
+   "seconds": 591755.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0048.parquet",
+   "rows": 658,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9473406,
+   "seconds": 588814.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0049.parquet",
+   "rows": 778,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9001698,
+   "seconds": 601994.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0050.parquet",
+   "rows": 661,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7981980,
+   "seconds": 573112.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0051.parquet",
+   "rows": 701,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9025318,
+   "seconds": 585036.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0052.parquet",
+   "rows": 684,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9373910,
+   "seconds": 590157.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0053.parquet",
+   "rows": 557,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8717597,
+   "seconds": 583479.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0054.parquet",
+   "rows": 616,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7608116,
+   "seconds": 570113.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0055.parquet",
+   "rows": 760,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8843244,
+   "seconds": 588338.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0056.parquet",
+   "rows": 500,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7959924,
+   "seconds": 569633.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0057.parquet",
+   "rows": 737,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8975848,
+   "seconds": 583313.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0058.parquet",
+   "rows": 609,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7470238,
+   "seconds": 558730.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0059.parquet",
+   "rows": 730,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8105102,
+   "seconds": 583198.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0060.parquet",
+   "rows": 594,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7197109,
+   "seconds": 576938.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0061.parquet",
+   "rows": 688,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8890253,
+   "seconds": 589637.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0062.parquet",
+   "rows": 682,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8299135,
+   "seconds": 582322.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0063.parquet",
+   "rows": 835,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8323626,
+   "seconds": 575165.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0064.parquet",
+   "rows": 491,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7347916,
+   "seconds": 564423.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0065.parquet",
+   "rows": 724,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8374108,
+   "seconds": 596638.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0066.parquet",
+   "rows": 681,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7701600,
+   "seconds": 575214.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0067.parquet",
+   "rows": 573,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7192093,
+   "seconds": 545487.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0068.parquet",
+   "rows": 642,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6687692,
+   "seconds": 581834.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0069.parquet",
+   "rows": 702,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7402689,
+   "seconds": 585436.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0070.parquet",
+   "rows": 641,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7273538,
+   "seconds": 585099.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0071.parquet",
+   "rows": 607,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7522095,
+   "seconds": 556687.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0072.parquet",
+   "rows": 541,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6895802,
+   "seconds": 566423.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0073.parquet",
+   "rows": 711,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7930294,
+   "seconds": 576078.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0074.parquet",
+   "rows": 712,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7474289,
+   "seconds": 587074.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0075.parquet",
+   "rows": 704,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8522481,
+   "seconds": 603618.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0076.parquet",
+   "rows": 646,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7921281,
+   "seconds": 593193.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0077.parquet",
+   "rows": 584,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7770014,
+   "seconds": 570796.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0078.parquet",
+   "rows": 705,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8649767,
+   "seconds": 593522.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0079.parquet",
+   "rows": 681,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7549269,
+   "seconds": 579363.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0080.parquet",
+   "rows": 680,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7625859,
+   "seconds": 595943.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0081.parquet",
+   "rows": 751,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7862288,
+   "seconds": 596584.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0082.parquet",
+   "rows": 689,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6711938,
+   "seconds": 585166.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0083.parquet",
+   "rows": 715,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7797126,
+   "seconds": 591781.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0084.parquet",
+   "rows": 596,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6998630,
+   "seconds": 560314.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0085.parquet",
+   "rows": 664,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7227677,
+   "seconds": 580061.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0086.parquet",
+   "rows": 678,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8363250,
+   "seconds": 581025.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0087.parquet",
+   "rows": 697,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7010134,
+   "seconds": 580835.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0088.parquet",
+   "rows": 585,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7840027,
+   "seconds": 579989.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0089.parquet",
+   "rows": 675,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7892041,
+   "seconds": 589006.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0090.parquet",
+   "rows": 712,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7600468,
+   "seconds": 577725.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0091.parquet",
+   "rows": 719,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7605571,
+   "seconds": 573384.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0092.parquet",
+   "rows": 550,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7485733,
+   "seconds": 604817.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0093.parquet",
+   "rows": 676,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7385956,
+   "seconds": 588892.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0094.parquet",
+   "rows": 566,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6777031,
+   "seconds": 595314.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0095.parquet",
+   "rows": 595,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6364305,
+   "seconds": 559908.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0096.parquet",
+   "rows": 658,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6368196,
+   "seconds": 583279.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0097.parquet",
+   "rows": 533,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5765443,
+   "seconds": 545534.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0098.parquet",
+   "rows": 622,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5774751,
+   "seconds": 559254.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0099.parquet",
+   "rows": 849,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8192116,
+   "seconds": 595978.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0100.parquet",
+   "rows": 708,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8451503,
+   "seconds": 580421.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0101.parquet",
+   "rows": 802,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7960662,
+   "seconds": 562729.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0102.parquet",
+   "rows": 718,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7595397,
+   "seconds": 583580.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0103.parquet",
+   "rows": 567,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5961873,
+   "seconds": 578075.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0104.parquet",
+   "rows": 602,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6649501,
+   "seconds": 578032.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0105.parquet",
+   "rows": 714,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9000097,
+   "seconds": 591036.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0106.parquet",
+   "rows": 603,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7521429,
+   "seconds": 552468.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0107.parquet",
+   "rows": 600,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7890629,
+   "seconds": 570376.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0108.parquet",
+   "rows": 629,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7349190,
+   "seconds": 594177.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0109.parquet",
+   "rows": 635,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7982996,
+   "seconds": 574843.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0110.parquet",
+   "rows": 644,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8310851,
+   "seconds": 593588.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0111.parquet",
+   "rows": 757,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8081612,
+   "seconds": 594809.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0112.parquet",
+   "rows": 584,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7721475,
+   "seconds": 593930.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0113.parquet",
+   "rows": 584,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 9260188,
+   "seconds": 578377.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0114.parquet",
+   "rows": 626,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7471786,
+   "seconds": 581503.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0115.parquet",
+   "rows": 636,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8579763,
+   "seconds": 595163.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0116.parquet",
+   "rows": 619,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7900423,
+   "seconds": 584429.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0117.parquet",
+   "rows": 543,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6794215,
+   "seconds": 587435.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0118.parquet",
+   "rows": 734,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7209047,
+   "seconds": 583902.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0119.parquet",
+   "rows": 693,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6867283,
+   "seconds": 570356.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0120.parquet",
+   "rows": 607,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6930071,
+   "seconds": 564266.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0121.parquet",
+   "rows": 735,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7658016,
+   "seconds": 588873.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0122.parquet",
+   "rows": 605,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6166129,
+   "seconds": 590703.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0123.parquet",
+   "rows": 708,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7646156,
+   "seconds": 591826.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0124.parquet",
+   "rows": 776,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7501359,
+   "seconds": 594339.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0125.parquet",
+   "rows": 643,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6387990,
+   "seconds": 560057.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0126.parquet",
+   "rows": 631,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7273215,
+   "seconds": 576354.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0127.parquet",
+   "rows": 748,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7371721,
+   "seconds": 589941.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0128.parquet",
+   "rows": 648,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8274779,
+   "seconds": 597719.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0129.parquet",
+   "rows": 646,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7121915,
+   "seconds": 587572.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0130.parquet",
+   "rows": 595,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7723649,
+   "seconds": 563591.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0131.parquet",
+   "rows": 700,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6140792,
+   "seconds": 605712.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0132.parquet",
+   "rows": 779,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7376659,
+   "seconds": 595780.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0133.parquet",
+   "rows": 579,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7354525,
+   "seconds": 575918.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0134.parquet",
+   "rows": 708,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6830824,
+   "seconds": 565418.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0135.parquet",
+   "rows": 631,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6791559,
+   "seconds": 582907.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0136.parquet",
+   "rows": 504,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7473894,
+   "seconds": 580355.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0137.parquet",
+   "rows": 692,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7292383,
+   "seconds": 589628.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0138.parquet",
+   "rows": 698,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7901901,
+   "seconds": 600622.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0139.parquet",
+   "rows": 699,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7125775,
+   "seconds": 566388.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0140.parquet",
+   "rows": 751,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8327539,
+   "seconds": 602750.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0141.parquet",
+   "rows": 511,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6780315,
+   "seconds": 549849.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0142.parquet",
+   "rows": 700,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8189740,
+   "seconds": 609266.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0143.parquet",
+   "rows": 736,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8616270,
+   "seconds": 601838.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0144.parquet",
+   "rows": 722,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7560789,
+   "seconds": 582748.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0145.parquet",
+   "rows": 730,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8257902,
+   "seconds": 584619.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0146.parquet",
+   "rows": 576,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7450343,
+   "seconds": 579242.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0147.parquet",
+   "rows": 638,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8027014,
+   "seconds": 599454.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0148.parquet",
+   "rows": 707,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8544608,
+   "seconds": 591747.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0149.parquet",
+   "rows": 636,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7884982,
+   "seconds": 605481.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0150.parquet",
+   "rows": 655,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7916360,
+   "seconds": 588313.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0151.parquet",
+   "rows": 635,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8190470,
+   "seconds": 598644.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0152.parquet",
+   "rows": 648,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8199726,
+   "seconds": 598440.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0153.parquet",
+   "rows": 625,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7687300,
+   "seconds": 580126.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0154.parquet",
+   "rows": 549,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7091042,
+   "seconds": 578906.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0155.parquet",
+   "rows": 761,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8320697,
+   "seconds": 579645.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0156.parquet",
+   "rows": 682,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8717888,
+   "seconds": 603947.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0157.parquet",
+   "rows": 662,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7813911,
+   "seconds": 614944.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0158.parquet",
+   "rows": 619,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7610890,
+   "seconds": 584129.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0159.parquet",
+   "rows": 732,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7848760,
+   "seconds": 575389.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0160.parquet",
+   "rows": 741,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8472082,
+   "seconds": 606594.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0161.parquet",
+   "rows": 694,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7635229,
+   "seconds": 589486.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0162.parquet",
+   "rows": 640,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7185463,
+   "seconds": 568925.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0163.parquet",
+   "rows": 698,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8037874,
+   "seconds": 593703.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0164.parquet",
+   "rows": 782,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7613199,
+   "seconds": 582876.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0165.parquet",
+   "rows": 606,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7405579,
+   "seconds": 602046.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0166.parquet",
+   "rows": 596,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7144582,
+   "seconds": 563055.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0167.parquet",
+   "rows": 630,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7453147,
+   "seconds": 569787.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0168.parquet",
+   "rows": 773,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7743441,
+   "seconds": 577192.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0169.parquet",
+   "rows": 811,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7714484,
+   "seconds": 596001.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0170.parquet",
+   "rows": 804,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8611611,
+   "seconds": 580778.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0171.parquet",
+   "rows": 741,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7257901,
+   "seconds": 574622.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0172.parquet",
+   "rows": 724,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 8465465,
+   "seconds": 593953.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0173.parquet",
+   "rows": 601,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7791897,
+   "seconds": 589265.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0174.parquet",
+   "rows": 706,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6956344,
+   "seconds": 590971.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0175.parquet",
+   "rows": 791,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7081003,
+   "seconds": 608940.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0176.parquet",
+   "rows": 709,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7218160,
+   "seconds": 602414.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0177.parquet",
+   "rows": 641,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5932440,
+   "seconds": 575473.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0178.parquet",
+   "rows": 717,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7687194,
+   "seconds": 591105.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0179.parquet",
+   "rows": 717,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7331164,
+   "seconds": 597658.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0180.parquet",
+   "rows": 729,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6926087,
+   "seconds": 575960.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0181.parquet",
+   "rows": 509,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7062977,
+   "seconds": 578411.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0182.parquet",
+   "rows": 654,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6722118,
+   "seconds": 588631.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0183.parquet",
+   "rows": 851,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7265963,
+   "seconds": 605953.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0184.parquet",
+   "rows": 677,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6675705,
+   "seconds": 564042.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0185.parquet",
+   "rows": 683,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7748172,
+   "seconds": 596499.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0186.parquet",
+   "rows": 655,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6144975,
+   "seconds": 567074.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0187.parquet",
+   "rows": 580,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5760228,
+   "seconds": 581015.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0188.parquet",
+   "rows": 643,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6415129,
+   "seconds": 604571.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0189.parquet",
+   "rows": 572,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6125653,
+   "seconds": 583563.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0190.parquet",
+   "rows": 639,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5985631,
+   "seconds": 574344.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0191.parquet",
+   "rows": 659,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6952394,
+   "seconds": 566272.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0192.parquet",
+   "rows": 620,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6985970,
+   "seconds": 573641.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0193.parquet",
+   "rows": 643,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6023990,
+   "seconds": 570497.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0194.parquet",
+   "rows": 734,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7656475,
+   "seconds": 583922.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0195.parquet",
+   "rows": 647,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6212787,
+   "seconds": 590285.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0196.parquet",
+   "rows": 660,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6997535,
+   "seconds": 578800.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0197.parquet",
+   "rows": 698,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7453109,
+   "seconds": 598482.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0198.parquet",
+   "rows": 611,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5854401,
+   "seconds": 592208.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0199.parquet",
+   "rows": 732,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6631787,
+   "seconds": 582945.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0200.parquet",
+   "rows": 641,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 6331942,
+   "seconds": 576558.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0201.parquet",
+   "rows": 708,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7521531,
+   "seconds": 600801.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0202.parquet",
+   "rows": 729,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7837112,
+   "seconds": 599069.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0203.parquet",
+   "rows": 682,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 7482778,
+   "seconds": 591229.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0204.parquet",
+   "rows": 587,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5482184,
+   "seconds": 432063.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0205.parquet",
+   "rows": 882,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 5508961,
+   "seconds": 572725.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0206.parquet",
+   "rows": 735,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 4656518,
+   "seconds": 560808.0,
+   "null_durations": 0
+  },
+  {
+   "path": "data/ar/metadata/0207.parquet",
+   "rows": 119,
+   "row_groups": 1,
+   "bytes_fetched": 98304,
+   "file_bytes": 565181,
+   "seconds": 69256.0,
+   "null_durations": 0
+  }
+ ],
+ "n_files": 208,
+ "rows": 138179,
+ "seconds": 120458381.0,
+ "null_durations": 0,
+ "bytes_fetched": 20447232,
+ "bytes_in_files": 1613746776,
+ "measured_at": "2026-10-30T13:09:39Z",
+ "api": {
+  "id": "espnet/yodas3",
+  "sha": "81d802f45a1c1e1f5331260484dacf1fbea81981",
+  "lastModified": "2026-10-07T18:03:31.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": "cc-by-3.0",
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "task_categories:audio-to-audio",
+   "task_categories:automatic-speech-recognition",
+   "task_categories:text-to-speech",
+   "task_categories:translation",
+   "license:cc-by-3.0",
+   "size_categories:1M<n<10M",
+   "modality:audio",
+   "modality:tabular",
+   "modality:text"
+  ],
+  "n_files": 13373
+ },
+ "locale_column": "locale_lang",
+ "locale_primary": "ar",
+ "locale_seconds": {
+  "ar": 24834315.0,
+  "other": 58715908.0,
+  "not_given": 36908158.0
+ },
+ "locale_hours": {
+  "ar": 6898.4208,
+  "other": 16309.9744,
+  "not_given": 10252.2661
+ },
+ "locale_rows": {
+  "ar": 29292,
+  "other": 67702,
+  "not_given": 41185
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "id": "casablanca",
+ "spec": {
+  "kind": "hf_viewer_stats",
+  "repo": "UBC-NLP/Casablanca",
+  "column": "duration",
+  "splits": [
+   [
+    "Algeria",
+    "validation"
+   ],
+   [
+    "Algeria",
+    "test"
+   ],
+   [
+    "Egypt",
+    "validation"
+   ],
+   [
+    "Egypt",
+    "test"
+   ],
+   [
+    "Jordan",
+    "validation"
+   ],
+   [
+    "Jordan",
+    "test"
+   ],
+   [
+    "Mauritania",
+    "validation"
+   ],
+   [
+    "Mauritania",
+    "test"
+   ],
+   [
+    "Morocco",
+    "validation"
+   ],
+   [
+    "Morocco",
+    "test"
+   ],
+   [
+    "Palestine",
+    "validation"
+   ],
+   [
+    "Palestine",
+    "test"
+   ],
+   [
+    "UAE",
+    "validation"
+   ],
+   [
+    "UAE",
+    "test"
+   ],
+   [
+    "Yemen",
+    "validation"
+   ],
+   [
+    "Yemen",
+    "test"
+   ]
+  ]
+ },
+ "kind": "hf_viewer_stats",
+ "repo": "UBC-NLP/Casablanca",
+ "revision": "8951b1b88e28c1107142ced57967b8d16350951d",
+ "column": "duration",
+ "scale": 1.0,
+ "parts": [
+  {
+   "config": "Algeria",
+   "split": "validation",
+   "num_examples": 844,
+   "nan_count": 0,
+   "mean": 4.2662,
+   "min": 0.19477,
+   "max": 40.78687,
+   "seconds": 3600.6728000000003,
+   "partial": false
+  },
+  {
+   "config": "Algeria",
+   "split": "test",
+   "num_examples": 843,
+   "nan_count": 0,
+   "mean": 4.00178,
+   "min": 0.49082,
+   "max": 21.93748,
+   "seconds": 3373.50054,
+   "partial": false
+  },
+  {
+   "config": "Egypt",
+   "split": "validation",
+   "num_examples": 846,
+   "nan_count": 0,
+   "mean": 4.25756,
+   "min": 0.60039,
+   "max": 27.22133,
+   "seconds": 3601.89576,
+   "partial": false
+  },
+  {
+   "config": "Egypt",
+   "split": "test",
+   "num_examples": 846,
+   "nan_count": 0,
+   "mean": 4.36004,
+   "min": 0.44619,
+   "max": 38.96255,
+   "seconds": 3688.5938399999995,
+   "partial": false
+  },
+  {
+   "config": "Jordan",
+   "split": "validation",
+   "num_examples": 848,
+   "nan_count": 0,
+   "mean": 4.24687,
+   "min": 0.0,
+   "max": 17.82776,
+   "seconds": 3601.34576,
+   "partial": false
+  },
+  {
+   "config": "Jordan",
+   "split": "test",
+   "num_examples": 848,
+   "nan_count": 0,
+   "mean": 4.1683,
+   "min": 0.67359,
+   "max": 16.08194,
+   "seconds": 3534.7184,
+   "partial": false
+  },
+  {
+   "config": "Mauritania",
+   "split": "validation",
+   "num_examples": 953,
+   "nan_count": 0,
+   "mean": 3.78083,
+   "min": 0.65864,
+   "max": 26.38565,
+   "seconds": 3603.13099,
+   "partial": false
+  },
+  {
+   "config": "Mauritania",
+   "split": "test",
+   "num_examples": 953,
+   "nan_count": 0,
+   "mean": 3.58323,
+   "min": 0.61996,
+   "max": 27.075,
+   "seconds": 3414.81819,
+   "partial": false
+  },
+  {
+   "config": "Morocco",
+   "split": "validation",
+   "num_examples": 1045,
+   "nan_count": 0,
+   "mean": 3.44931,
+   "min": 0.39892,
+   "max": 17.48571,
+   "seconds": 3604.52895,
+   "partial": false
+  },
+  {
+   "config": "Morocco",
+   "split": "test",
+   "num_examples": 1045,
+   "nan_count": 0,
+   "mean": 3.4671,
+   "min": 0.44484,
+   "max": 14.1109,
+   "seconds": 3623.1195,
+   "partial": false
+  },
+  {
+   "config": "Palestine",
+   "split": "validation",
+   "num_examples": 667,
+   "nan_count": 0,
+   "mean": 5.39775,
+   "min": 0.52088,
+   "max": 22.04882,
+   "seconds": 3600.29925,
+   "partial": false
+  },
+  {
+   "config": "Palestine",
+   "split": "test",
+   "num_examples": 667,
+   "nan_count": 0,
+   "mean": 5.2652,
+   "min": 0.26489,
+   "max": 29.5433,
+   "seconds": 3511.8884000000003,
+   "partial": false
+  },
+  {
+   "config": "UAE",
+   "split": "validation",
+   "num_examples": 813,
+   "nan_count": 0,
+   "mean": 4.43895,
+   "min": 0.55438,
+   "max": 24.92438,
+   "seconds": 3608.8663500000002,
+   "partial": false
+  },
+  {
+   "config": "UAE",
+   "split": "test",
+   "num_examples": 813,
+   "nan_count": 0,
+   "mean": 4.13214,
+   "min": 0.53839,
+   "max": 22.56188,
+   "seconds": 3359.42982,
+   "partial": false
+  },
+  {
+   "config": "Yemen",
+   "split": "validation",
+   "num_examples": 803,
+   "nan_count": 0,
+   "mean": 4.48894,
+   "min": 0.30817,
+   "max": 24.10691,
+   "seconds": 3604.61882,
+   "partial": false
+  },
+  {
+   "config": "Yemen",
+   "split": "test",
+   "num_examples": 803,
+   "nan_count": 0,
+   "mean": 4.67051,
+   "min": 0.29703,
+   "max": 30.79557,
+   "seconds": 3750.41953,
+   "partial": false
+  }
+ ],
+ "rows": 13637,
+ "seconds": 57081.846900000004,
+ "measured_at": "2026-10-30T12:58:09Z",
+ "api": {
+  "id": "UBC-NLP/Casablanca",
+  "sha": "8951b1b88e28c1107142ced57967b8d16350951d",
+  "lastModified": "2024-11-14T20:26:46.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": "cc-by-nc-nd-4.0",
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "language:ar",
+   "license:cc-by-nc-nd-4.0",
+   "size_categories:10K<n<100K",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 32
+ },
+ "note": "seconds = mean x non-null count; the viewer rounds the mean to 5 decimals"
+}

@@ -1,0 +1,64 @@
+{
+ "rows": 31,
+ "pass": 31,
+ "fail": 0,
+ "overlaps": [
+  {
+   "a": "masc",
+   "b": "adi17",
+   "shared_ids": 3,
+   "shared_hours_b": 0.013,
+   "result": "pass"
+  },
+  {
+   "a": "masc",
+   "b": "adi20",
+   "shared_ids": 107,
+   "shared_hours_b": 3.432,
+   "result": "pass"
+  }
+ ],
+ "locale_summaries": [
+  {
+   "measurement": "yodas3-ar",
+   "column": "locale_lang",
+   "hours": {
+    "ar": 6898.42,
+    "other": 16309.97,
+    "not_given": 10252.27
+   },
+   "result": "pass"
+  }
+ ],
+ "licence_copies": [
+  {
+   "corpus_id": "masc",
+   "copy": "pain/MASC",
+   "licence": "CC BY 4.0",
+   "result": "pass"
+  },
+  {
+   "corpus_id": "masc",
+   "copy": "hirundo-io/MASC",
+   "licence": "CC BY 4.0",
+   "result": "pass"
+  },
+  {
+   "corpus_id": "masc",
+   "copy": "MohamedRashad/MASC-Arabic",
+   "licence": "CC BY 4.0",
+   "result": "pass"
+  },
+  {
+   "corpus_id": "masc",
+   "copy": "abdusah/masc",
+   "licence": "CC BY-NC 4.0",
+   "result": "pass"
+  }
+ ],
+ "headline_published": 36220.98,
+ "headline_rederived": 36220.98,
+ "headline_agrees": true,
+ "snapshot_hashes_checked": 39,
+ "snapshot_hashes_ok": 39
+}

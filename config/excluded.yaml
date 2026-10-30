@@ -1,0 +1,177 @@
+# Reviewed candidates that are not counted, with the reason. Discovery results that match an entry
+# here take this reason; everything else found by discovery is listed as not yet reviewed.
+excluded:
+- candidate_id: zenodo:14803541
+  source: zenodo
+  url: https://zenodo.org/records/14803541
+  title: "ArPod2.0: A Novel Arabic Podcast Dataset for Spoken Topic Identification"
+  licence_tag: cc-by-4.0
+  reason_code: no_released_audio
+  reason: The record holds the paper (PDF) only; no released audio was found. The paper describes over 30 hours.
+- candidate_id: MBZUAI/ArVoice#part-4
+  source: huggingface
+  url: https://huggingface.co/datasets/MBZUAI/ArVoice
+  title: ArVoice Part 4 (73.5 h)
+  licence_tag: cc-by-4.0
+  reason_code: excluded_synthetic
+  reason: Speech synthesised with commercial TTS systems (publisher description); not recorded speech.
+- candidate_id: Bayanat-Labs/arabic-asr-channel-pairs
+  source: huggingface
+  url: https://huggingface.co/datasets/Bayanat-Labs/arabic-asr-channel-pairs
+  title: Arabic ASR channel pairs (Bayanat Labs)
+  licence_tag: cc-by-4.0
+  reason_code: excluded_derived_audio
+  reason: Bayanat Labs release of derived audio (channel renderings of FLEURS Arabic recordings, which are counted under FLEURS); not new speech.
+- candidate_id: espnet/yodas
+  source: huggingface
+  url: https://huggingface.co/datasets/espnet/yodas
+  title: YODAS (v1)
+  licence_tag: cc-by-3.0
+  reason_code: same_audio_as_counted
+  reason: Same recordings as YODAS2 in segmented layout (YODAS2 card); counted once under YODAS2.
+- candidate_id: QCRI/MenaSpeechBank
+  source: huggingface
+  url: https://huggingface.co/datasets/QCRI/MenaSpeechBank
+  title: MENASpeechBank
+  licence_tag: cc-by-nc-sa-4.0
+  reason_code: provenance_not_verified
+  reason: Reference voice bank selected from other sources plus synthesised conversations; the origin of the 26.45 hours of reference audio was not verified in this run.
+- candidate_id: linagora/linto-dataset-audio-ar-tn
+  source: huggingface
+  url: https://huggingface.co/datasets/linagora/linto-dataset-audio-ar-tn
+  title: LinTO Tunisian Arabic audio
+  licence_tag: cc-by-4.0
+  reason_code: compilation_not_reviewed
+  reason: Compilation of several sources (including a MASC subset and TunSwitch); the licences of the component sources were not verified in this run.
+- candidate_id: UBC-NLP/NADI_2026_ADI20_micro
+  source: huggingface
+  url: https://huggingface.co/datasets/UBC-NLP/NADI_2026_ADI20_micro
+  title: NADI 2026 ADI-20 micro
+  licence_tag: mit
+  reason_code: copy_of_counted
+  reason: Subset of ADI17 and ADI-20 audio (10 hours per dialect, card); counted under ADI17 and ADI-20.
+- candidate_id: ymoslem/MediaSpeech
+  source: huggingface
+  url: https://huggingface.co/datasets/ymoslem/MediaSpeech
+  title: MediaSpeech (copy)
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of MediaSpeech (counted from the publisher page; this copy is used for the duration statistics).
+- candidate_id: halabi2016/arabic_speech_corpus
+  source: huggingface
+  url: https://huggingface.co/datasets/halabi2016/arabic_speech_corpus
+  title: Arabic Speech Corpus (Hub loader)
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Loader for the Arabic Speech Corpus (counted from the publisher page).
+- candidate_id: sqrk/mixat-tri
+  source: huggingface
+  url: https://huggingface.co/datasets/sqrk/mixat-tri
+  title: Mixat with transliterations and translations
+  licence_tag: cc-by-nc-sa-4.0
+  reason_code: copy_of_counted
+  reason: Copy of Mixat with added transliterations and translations; counted under Mixat.
+- candidate_id: pain/MASC
+  source: huggingface
+  url: https://huggingface.co/datasets/pain/MASC
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of MASC; counted under MASC (its segment tables are used for transcribed hours and video-ID overlap).
+- candidate_id: MohamedRashad/MASC-Arabic
+  source: huggingface
+  url: https://huggingface.co/datasets/MohamedRashad/MASC-Arabic
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of MASC; counted under MASC.
+- candidate_id: hirundo-io/MASC
+  source: huggingface
+  url: https://huggingface.co/datasets/hirundo-io/MASC
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of the MASC clean subset; counted under MASC.
+- candidate_id: abdusah/masc
+  source: huggingface
+  url: https://huggingface.co/datasets/abdusah/masc
+  licence_tag: cc-by-nc-4.0
+  reason_code: copy_of_counted
+  reason: Copy of MASC declaring CC BY-NC 4.0; MASC is counted under the publisher's CC BY 4.0.
+- candidate_id: Byne/MASC
+  source: huggingface
+  url: https://huggingface.co/datasets/Byne/MASC
+  reason_code: copy_of_counted
+  reason: Copy of MASC; counted under MASC.
+- candidate_id: MohamedRashad/SADA22
+  source: huggingface
+  url: https://huggingface.co/datasets/MohamedRashad/SADA22
+  licence_tag: cc-by-nc-sa-4.0
+  reason_code: copy_of_counted
+  reason: Copy of SADA; counted under SADA.
+- candidate_id: khaledalganem/sada2022
+  source: huggingface
+  url: https://huggingface.co/datasets/khaledalganem/sada2022
+  licence_tag: cc-by-nc-sa-4.0
+  reason_code: copy_of_counted
+  reason: Copy of SADA; counted under SADA.
+- candidate_id: m6011/sada2022
+  source: huggingface
+  url: https://huggingface.co/datasets/m6011/sada2022
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of the SADA test set declaring CC BY 4.0; SADA is counted under the publisher's CC BY-NC-SA 4.0.
+- candidate_id: MohamedRashad/mgb2-arabic
+  source: huggingface
+  url: https://huggingface.co/datasets/MohamedRashad/mgb2-arabic
+  reason_code: copy_of_counted
+  reason: Copy of MGB-2 without a licence statement; MGB-2 is counted from the publisher's card and paper.
+- candidate_id: MohamedRashad/common-voice-18-arabic
+  source: huggingface
+  url: https://huggingface.co/datasets/MohamedRashad/common-voice-18-arabic
+  reason_code: copy_of_counted
+  reason: Copy of an earlier Common Voice Arabic release; Common Voice is counted from the current release.
+- candidate_id: mozilla-foundation/common_voice_17_0
+  source: huggingface
+  url: https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0
+  reason_code: copy_of_counted
+  reason: Earlier Common Voice release card; Common Voice is counted from the current release.
+- candidate_id: nour-world/everyayah
+  source: huggingface
+  url: https://huggingface.co/datasets/nour-world/everyayah
+  licence_tag: mit
+  reason_code: copy_of_counted
+  reason: Copy of the Tarteel AI recitation set declaring MIT; counted under the original, whose card says the recording licence is not documented.
+- candidate_id: Salama1429/tarteel-ai-everyayah-Quran
+  source: huggingface
+  url: https://huggingface.co/datasets/Salama1429/tarteel-ai-everyayah-Quran
+  licence_tag: mit
+  reason_code: copy_of_counted
+  reason: Copy of the Tarteel AI recitation set declaring MIT; counted under the original.
+- candidate_id: oddadmix/yodas-v3-ar-labeled
+  source: huggingface
+  url: https://huggingface.co/datasets/oddadmix/yodas-v3-ar-labeled
+  licence_tag: cc-by-3.0
+  reason_code: copy_of_counted
+  reason: Derived from YODAS v3 Arabic; counted under YODAS v3.
+- candidate_id: oddadmix/yodas-v3-ar-labeled-split
+  source: huggingface
+  url: https://huggingface.co/datasets/oddadmix/yodas-v3-ar-labeled-split
+  licence_tag: cc-by-3.0
+  reason_code: copy_of_counted
+  reason: Derived from YODAS v3 Arabic; counted under YODAS v3.
+- candidate_id: sarulab-speech/yodas2_sidon
+  source: huggingface
+  url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
+  licence_tag: cc-by-3.0
+  reason_code: copy_of_counted
+  reason: Processed version of YODAS2 audio; counted under YODAS2.
+- candidate_id: mabahboh/ArVoice-Undiacritized
+  source: huggingface
+  url: https://huggingface.co/datasets/mabahboh/ArVoice-Undiacritized
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Derived from ArVoice; counted under ArVoice.
+- candidate_id: FluidInference/fleurs-full
+  source: huggingface
+  url: https://huggingface.co/datasets/FluidInference/fleurs-full
+  licence_tag: cc-by-4.0
+  reason_code: copy_of_counted
+  reason: Copy of FLEURS; counted under FLEURS.

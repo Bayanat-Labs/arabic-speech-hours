@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayanatlabs-arabic-speech-hours"
+dynamic = ["version"]
+description = "Open Arabic Speech Hours Counter: released Arabic speech hours by licence class, hour type, dialect and genre, computed from public metadata. By Bayanat Labs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "LICENSES/CC-BY-4.0.txt"]
+authors = [{ name = "Bayanat Labs" }]
+dependencies = [
+  "requests>=2.28",
+  "pyyaml>=6",
+  "pandas>=2.0",
+  "pyarrow>=14",
+]
+keywords = ["arabic", "speech", "asr", "tts", "datasets", "licence", "open-data", "hours"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: Arabic",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "jsonschema>=4"]
+check = ["playwright>=1.40"]
+
+[project.urls]
+Homepage = "https://bayanatlabs.com/open/arabic-speech-hours"
+Repository = "https://github.com/Bayanat-Labs/arabic-speech-hours"
+Issues = "https://github.com/Bayanat-Labs/arabic-speech-hours/issues"
+Dataset = "https://huggingface.co/datasets/Bayanat-Labs/arabic-speech-hours"
+
+[project.scripts]
+arabic-speech-hours = "arabic_speech_hours.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["arabic_speech_hours"]
+
+[tool.setuptools.dynamic]
+version = { attr = "arabic_speech_hours.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

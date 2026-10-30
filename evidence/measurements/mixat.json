@@ -1,0 +1,154 @@
+{
+ "id": "mixat",
+ "spec": {
+  "kind": "hf_parquet_columns",
+  "repo": "MBZUAI/MIXAT",
+  "revision": "66d4f5386e89710ad8fb2a1f54dd5ebed890ba7a",
+  "pattern": "data/*.parquet",
+  "duration_col": "duration_ms",
+  "scale": 0.001
+ },
+ "kind": "hf_parquet_columns",
+ "repo": "MBZUAI/MIXAT",
+ "revision": "66d4f5386e89710ad8fb2a1f54dd5ebed890ba7a",
+ "pattern": "data/*.parquet",
+ "columns_read": [
+  "duration_ms"
+ ],
+ "duration_column": "duration_ms",
+ "scale": 0.001,
+ "files": [
+  {
+   "path": "data/train-00000-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 330310055,
+   "seconds": 2635.7710000000006,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00001-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 339880085,
+   "seconds": 2196.1220000000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00002-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 347325404,
+   "seconds": 2193.8369999999995,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00003-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 420467461,
+   "seconds": 2700.813,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00004-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 387867618,
+   "seconds": 2486.009,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00005-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 321416166,
+   "seconds": 2085.672,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00006-of-00012.parquet",
+   "rows": 311,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 424304996,
+   "seconds": 3003.172,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00007-of-00012.parquet",
+   "rows": 310,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 436664233,
+   "seconds": 2866.639,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00008-of-00012.parquet",
+   "rows": 310,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 472183975,
+   "seconds": 2937.578,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00009-of-00012.parquet",
+   "rows": 310,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 506646831,
+   "seconds": 3422.0550000000003,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00010-of-00012.parquet",
+   "rows": 310,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 416559589,
+   "seconds": 2701.732,
+   "null_durations": 0
+  },
+  {
+   "path": "data/train-00011-of-00012.parquet",
+   "rows": 310,
+   "row_groups": 4,
+   "bytes_fetched": 163840,
+   "file_bytes": 438379760,
+   "seconds": 3084.338,
+   "null_durations": 0
+  }
+ ],
+ "n_files": 12,
+ "rows": 3727,
+ "seconds": 32313.738,
+ "null_durations": 0,
+ "bytes_fetched": 1966080,
+ "bytes_in_files": 4842006173,
+ "measured_at": "2026-10-30T13:17:52Z",
+ "api": {
+  "id": "MBZUAI/MIXAT",
+  "sha": "66d4f5386e89710ad8fb2a1f54dd5ebed890ba7a",
+  "lastModified": "2025-06-11T11:26:55.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": null,
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "size_categories:1K<n<10K",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 14
+ }
+}

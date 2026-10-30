@@ -1,0 +1,55 @@
+{
+ "id": "masc-transcribed",
+ "spec": {
+  "kind": "delimited",
+  "urls": [
+   "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/train/train.csv",
+   "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/dev/dev.csv",
+   "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/test/test.csv"
+  ],
+  "delimiter": ",",
+  "header": true,
+  "duration_field": "duration",
+  "id_field": "video_id",
+  "group_field": "type"
+ },
+ "kind": "delimited",
+ "parts": [
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/train/train.csv",
+   "sha256": "dc843ac611b1b3aedf80b31fc424ad73644b6a2400a837264d5fdda8fda30067",
+   "bytes": 137182699,
+   "duration_field": "duration",
+   "scale": 1.0,
+   "rows": 875873,
+   "seconds": 3121904.949,
+   "measured_at": "2026-10-30T13:19:25Z"
+  },
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/dev/dev.csv",
+   "sha256": "e8d5220c186686827d25657cb88fc247f8eac5da8d81ed83503b5479f77ddf50",
+   "bytes": 3091793,
+   "duration_field": "duration",
+   "scale": 1.0,
+   "rows": 19521,
+   "seconds": 74924.44,
+   "measured_at": "2026-10-30T13:19:27Z"
+  },
+  {
+   "kind": "delimited_manifest",
+   "url": "https://huggingface.co/datasets/pain/MASC/resolve/99bfbcb394b70e43d6f4ff21a9f61496808b3574/transcript/test/test.csv",
+   "sha256": "8a1d13a6f7d428387f546b0ca2ebf0ff14651f5a6df2906d202c10be63bcd67a",
+   "bytes": 2882079,
+   "duration_field": "duration",
+   "scale": 1.0,
+   "rows": 18006,
+   "seconds": 69909.13,
+   "measured_at": "2026-10-30T13:19:29Z"
+  }
+ ],
+ "rows": 913400,
+ "seconds": 3266738.5190000003,
+ "measured_at": "2026-10-30T13:19:29Z"
+}

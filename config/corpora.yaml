@@ -1,0 +1,412 @@
+# Watched Arabic speech corpora. One entry per corpus; each entry has one licence class for its audio
+# and one or more rows (partitions by hour type, dialect, genre or split). Hours come from a
+# measurement in measurements.yaml (computed) or from a quoted statement in a saved snapshot (stated).
+# Quotes are exact spans of the snapshot text; numbers in a quote are re-read by the second check.
+version: 2026.10.30
+priority:   # for overlap adjustment within a licence class: earlier entries keep shared hours
+  [common-voice-ar, yodas3-ar, yodas2-ar, masc, arabic-speech-corpus, arvoice, clartts, fleurs-ar, mediaspeech-ar,
+   adi17, adi20, sada, qasr, mgb2, casablanca, mixat, tarteel-recitations]
+corpora:
+
+- corpus_id: common-voice-ar
+  name: Common Voice Scripted Speech 27.0, Arabic
+  publisher: Mozilla Common Voice (Mozilla Foundation)
+  homepage_url: https://mozilladatacollective.com/datasets/cmu5wom3z00ceo107guxtg4xa
+  version: 27.0 (cv-corpus-27.0-2026-09-11)
+  release_date: 2026-09-17
+  access: download page
+  platform_caveat: null
+  licence:
+    string: CC0-1.0
+    declared: cc0-1.0
+    url: https://mozilladatacollective.com/datasets/cmu5wom3z00ceo107guxtg4xa
+    quote: Creative Commons Zero v1.0 Universal (CC0-1.0)
+    snapshot: common-voice-ar/mdc-page
+  additional_terms_quote: It is forbidden to re-host or re-share this dataset.
+  notes: The download page adds conditions to the CC0 licence (no attempt to identify speakers; no re-hosting). Release statistics from the Common Voice cv-dataset repository; no dialect field. The Spontaneous Speech 5.0 release statistics list no Arabic locale.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: read, hours_method: computed_from_release_stats,
+     measurement: common-voice-ar-27, field: seconds,
+     cross_check_quote: "The dataset contains 136832 clips representing 158.27 hours of recorded speech (93.34 hours validated)",
+     cross_check_snapshot: common-voice-ar/mdc-page}
+  - {hour_type: validated, dialect_group: unlabelled, genre: read, hours_method: computed_from_release_stats,
+     measurement: common-voice-ar-27, field: valid_seconds}
+
+- corpus_id: yodas3-ar
+  name: YODAS v3, Arabic subset
+  publisher: ESPnet (Chen, Takamichi, Shiota, Fukayama, Cornell, Watanabe)
+  homepage_url: https://huggingface.co/datasets/espnet/yodas3
+  version: 81d802f45a1c1e1f5331260484dacf1fbea81981
+  release_date: 2026-10-07
+  access: open download
+  platform_caveat: youtube
+  licence:
+    string: CC BY 3.0
+    declared: cc-by-3.0
+    url: https://huggingface.co/datasets/espnet/yodas3
+    quote: originally released under a CC-BY-3.0 license
+    snapshot: yodas3-ar/hf-card
+  notes: Hours are the sum of the per-recording length column of the Arabic metadata files (data/ar/metadata); the publisher files recordings by the language of their caption track. Rows are split by the uploader-locale field of the same metadata (Arabic, another language, not given); the field describes the upload, not the speech. Unprocessed long-form audio. Recording IDs are publisher IDs, not source video IDs.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: mixed, hours_method: computed_from_metadata, partition: locale-ar,
+     source_dialect_label: "caption track ar; uploader locale ar",
+     measurement: yodas3-ar, field: seconds, filter: {locale_lang: {eq: ar}}}
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: mixed, hours_method: computed_from_metadata, partition: locale-other,
+     source_dialect_label: "caption track ar; uploader locale another language",
+     measurement: yodas3-ar, field: seconds, filter: {locale_lang: {ne: ar, notnull: true}}}
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: mixed, hours_method: computed_from_metadata, partition: locale-none,
+     source_dialect_label: "caption track ar; uploader locale not given",
+     measurement: yodas3-ar, field: seconds, filter: {locale_lang: {isnull: true}}}
+
+- corpus_id: yodas2-ar
+  name: YODAS2, Arabic subset (ar000)
+  publisher: ESPnet (Li, Takamichi, Saeki, Chen, Shiota, Watanabe)
+  homepage_url: https://huggingface.co/datasets/espnet/yodas2
+  version: 631fc446cb1a41ee93a1d390a167c6e08c2597a3
+  release_date: 2026-10-22
+  access: open download
+  platform_caveat: youtube
+  licence:
+    string: CC BY 3.0
+    declared: cc-by-3.0
+    url: https://huggingface.co/datasets/espnet/yodas2
+    quote: "cc-by-3.0"
+    snapshot: yodas2-ar/hf-card
+  notes: Hours are the sum of the per-recording duration manifests of the ar000 subset (data/ar000/duration). The publisher states that YODAS2 holds the same recordings as YODAS v1 in long-form layout, so YODAS v1 is not counted separately.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: mixed, hours_method: computed_from_metadata,
+     measurement: yodas2-ar, field: seconds}
+
+- corpus_id: masc
+  name: "MASC: Massive Arabic Speech Corpus"
+  publisher: Al-Fetyani, Al-Barham, Abandah, Alsharkawi, Dawas (University of Jordan)
+  homepage_url: https://ieee-dataport.org/open-access/masc-massive-arabic-speech-corpus
+  version: IEEE DataPort, last updated 2025-04-28 (DOI 10.21227/e1qb-jv46)
+  release_date: 2021-08-18
+  access: free account required
+  access_quote: Open Access dataset files are accessible to all logged in users.
+  platform_caveat: youtube
+  licence:
+    string: CC BY 4.0
+    declared: cc-by-4.0
+    url: https://ieee-dataport.org/open-access/masc-massive-arabic-speech-corpus
+    quote: '"license": "https://creativecommons.org/licenses/by/4.0/"'
+    snapshot: masc/ieee-dataport
+    snapshot_part: html
+    found_in: the dataset metadata of the publisher's IEEE DataPort page; the visible page text states no licence
+    found_in_ar: البيانات الوصفية لصفحة الناشر على IEEE DataPort، ولا يذكر نص الصفحة الظاهر أي ترخيص
+    copies:   # third-party copies on the Hugging Face Hub, licence as each card declares it
+    - {repo: pain/MASC, licence: CC BY 4.0, snapshot: masc/copy-pain}
+    - {repo: hirundo-io/MASC, licence: CC BY 4.0, snapshot: masc/copy-hirundo}
+    - {repo: MohamedRashad/MASC-Arabic, licence: CC BY 4.0, snapshot: masc/copy-mohamedrashad}
+    - {repo: abdusah/masc, licence: CC BY-NC 4.0, snapshot: masc/copy-abdusah}
+  notes: The publisher page declares CC BY 4.0 in its dataset metadata. Copies on the Hub declare CC BY 4.0 (pain/MASC, hirundo-io/MASC, MohamedRashad/MASC-Arabic) or CC BY-NC 4.0 (abdusah/masc); the publisher's licence is used. Transcribed hours are computed from the segment tables (clean and noisy subsets) of the pain/MASC copy.
+  rows:
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: multi-dialect (publisher description), genre: mixed,
+     hours_method: card_or_paper_stated, stated_hours: 1000,
+     quote: "MASC is a dataset that contains 1,000 hours of speech sampled at 16 kHz", snapshot: masc/ieee-dataport,
+     locator: IEEE DataPort page, abstract}
+  - {hour_type: transcribed, dialect_group: mixed, source_dialect_label: multi-dialect (publisher description), genre: mixed,
+     hours_method: computed_from_metadata, measurement: masc-transcribed, field: seconds,
+     locator: "pain/MASC transcript/{train,dev,test}.csv, duration column"}
+
+- corpus_id: arabic-speech-corpus
+  name: Arabic Speech Corpus
+  publisher: Nawar Halabi (University of Southampton)
+  homepage_url: http://en.arabicspeechcorpus.com/
+  version: corpus package as offered on the publisher page
+  release_date: null
+  access: open download
+  platform_caveat: null
+  licence:
+    string: CC BY 4.0
+    declared: cc-by-4.0
+    url: http://en.arabicspeechcorpus.com/
+    quote: Arabic Speech Corpus by Nawar Halabi is licensed under a Creative Commons Attribution 4.0 International License.
+    snapshot: arabic-speech-corpus/home
+  notes: Studio recordings of one speaker for speech synthesis. The thesis states that the corpus exceeds 3 hours; 3.0 hours is counted. The publisher page gives the accent as south Levantine (Damascus).
+  rows:
+  - {hour_type: released_audio, dialect_group: Levantine, source_dialect_label: "south Levantine Arabic (Damascian accent)",
+     genre: studio-tts, hours_method: card_or_paper_stated, stated_hours: 3.0,
+     quote: The size of our created corpus exceeds 3 hours of speech., snapshot: arabic-speech-corpus/thesis,
+     locator: PhD thesis (Halabi), chapter on corpus segmentation,
+     dialect_quote: "The corpus was recorded in south Levantine Arabic (Damascian accent) using a professional studio.",
+     dialect_snapshot: arabic-speech-corpus/home}
+
+- corpus_id: arvoice
+  name: ArVoice
+  publisher: MBZUAI (Toyin, Marew, Alblooshi, Magdy, Aldarmaki)
+  homepage_url: https://huggingface.co/datasets/MBZUAI/ArVoice
+  version: 98ade23b24851329f0a528dac4edc0f453f71121
+  release_date: 2025-10-31
+  access: Parts 3 and 4 open download; Parts 1 and 2 by signed agreement
+  platform_caveat: null
+  licence:
+    string: CC BY 4.0 (repository); Parts 1 and 2 by data use agreement
+    declared: cc-by-4.0
+    url: https://huggingface.co/datasets/MBZUAI/ArVoice
+    quote: "License: https://creativecommons.org/licenses/by/4.0/"
+    snapshot: arvoice/hf-card
+  notes: The Hub repository holds Part 3 (a modified subset of the Arabic Speech Corpus, counted there) and Part 4 (speech synthesised with commercial TTS systems, excluded). Parts 1 and 2 (six professional speakers) are shared after a signed agreement and are listed under research or request.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, source_dialect_label: "speaker origin Syria (publisher table)", genre: studio-tts,
+     hours_method: card_or_paper_stated, stated_hours: 2.69, partition: part-3,
+     quote: "ArVoice Part 3\tM\tSyria\t2.69\tASC", snapshot: arvoice/hf-card, locator: Hub card, data statistics table}
+  - {hour_type: released_audio, licence_class_override: research-or-request, dialect_group: unlabelled,
+     source_dialect_label: speaker origins Egypt, Jordan, Morocco, Palestine (publisher table), genre: studio-tts,
+     hours_method: card_or_paper_stated, stated_hours: 7.29, partition: parts-1-2,
+     stated_sum_of: [1.17, 1.45, 1.58, 1.23, 0.93, 0.93],
+     quote: "to access the main subset, part (1,2), which consists of six professional speakers, please sign this agreement and email it to us.",
+     snapshot: arvoice/hf-card, locator: Hub card, data statistics table (sum of the six Part 1 and Part 2 rows)}
+
+- corpus_id: clartts
+  name: ClArTTS
+  publisher: MBZUAI (Kulkarni, Kulkarni, Shatnawi, Aldarmaki)
+  homepage_url: https://huggingface.co/datasets/MBZUAI/ClArTTS
+  version: 2f6e820abba8b5168b346c43479a324d8d37e35a
+  release_date: 2025-10-01
+  access: open download
+  platform_caveat: null
+  licence:
+    string: CC BY 4.0
+    declared: cc-by-4.0
+    url: https://huggingface.co/datasets/MBZUAI/ClArTTS
+    quote: "cc-by-4.0"
+    snapshot: clartts/hf-card
+  notes: Classical Arabic read by one speaker, segmented from a public-domain audiobook.
+  rows:
+  - {hour_type: released_audio, dialect_group: Classical-Quranic, source_dialect_label: Classical Arabic, genre: read,
+     hours_method: computed_from_metadata, measurement: clartts, field: seconds}
+
+- corpus_id: fleurs-ar
+  name: FLEURS, Arabic (ar_eg)
+  publisher: Google (Conneau et al.)
+  homepage_url: https://huggingface.co/datasets/google/fleurs
+  version: 70bb2e84b976b7e960aa89f1c648e09c59f894dd
+  release_date: 2022-06-07
+  access: open download
+  platform_caveat: null
+  licence:
+    string: CC BY 4.0
+    declared: cc-by-4.0
+    url: https://huggingface.co/datasets/google/fleurs
+    quote: All datasets are licensed under the Creative Commons license (CC-BY).
+    snapshot: fleurs-ar/hf-card
+  notes: Read sentences from FLoRes-101. Hours from the num_samples column of the ar_eg train, dev and test manifests (16 kHz). The ar_eg locale code is kept as the source label; no dialect is stated.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, source_dialect_label: ar_eg (locale code), genre: read,
+     hours_method: computed_from_metadata, measurement: fleurs-ar, field: seconds}
+
+- corpus_id: mediaspeech-ar
+  name: MediaSpeech, Arabic
+  publisher: NTR Lab (Kolobov et al.)
+  homepage_url: https://www.openslr.org/108/
+  version: "1.1"
+  release_date: 2021-03-30
+  access: open download
+  platform_caveat: null
+  licence:
+    string: CC BY 4.0
+    declared: cc-by-4.0
+    url: https://www.openslr.org/108/
+    quote: "License: dataset is distributed under the Creative Commons Attribution 4.0 International License."
+    snapshot: mediaspeech-ar/openslr
+  notes: Media speech for ASR testing. Hours from the dataset viewer's audio-duration statistics of the ar configuration of the ymoslem/MediaSpeech copy; the publisher states 10 hours per language.
+  rows:
+  - {hour_type: released_audio, dialect_group: unlabelled, genre: broadcast, hours_method: computed_from_metadata,
+     measurement: mediaspeech-ar, field: seconds,
+     cross_check_quote: "The dataset contains 10 hours of speech for each language provided.", cross_check_snapshot: mediaspeech-ar/openslr}
+
+- corpus_id: adi17
+  name: ADI17
+  publisher: QCRI and MIT (Shon, Ali, Samih, Mubarak, Glass), distributed by ArabicSpeech
+  homepage_url: https://huggingface.co/datasets/ArabicSpeech/ADI17
+  version: bfb3990fb38b199806c1f994928d34847e3d10c6
+  release_date: 2025-08-11
+  access: open download
+  platform_caveat: youtube
+  licence:
+    string: none found
+    declared: none
+    url: https://huggingface.co/datasets/ArabicSpeech/ADI17
+    quote: null
+    snapshot: adi17/hf-page
+  notes: The repository has no dataset card and declares no licence. Training hours as stated in the ADI-20 paper; validation and test hours computed from the segment IDs (start and end times in hundredths of a second). Dialect labels are country codes for 17 countries.
+  rows:
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: 17 country labels, genre: mixed, partition: train,
+     hours_method: card_or_paper_stated, stated_hours: 3033,
+     quote: "The official ADI-17 dataset [12] contains 3,033 hours of dialectal Arabic speech for training", snapshot: adi20/paper,
+     locator: ADI-20 paper, section 2.1}
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: 17 country labels, genre: mixed, partition: dev-test,
+     hours_method: computed_from_metadata, measurement: adi17-devtest, field: seconds}
+
+- corpus_id: adi20
+  name: ADI-20 (additions to ADI17)
+  publisher: Elyadata and Avignon University (Elleuch, Mdhaffar, Estève, Bougares), distributed by ArabicSpeech
+  homepage_url: https://huggingface.co/datasets/ArabicSpeech/ADI20
+  version: 76c04b679516502b32cd8c1cd99da0cd939d3c18
+  release_date: 2026-07-04
+  access: open download
+  platform_caveat: youtube
+  licence:
+    string: none found
+    declared: none
+    url: https://huggingface.co/datasets/ArabicSpeech/ADI20
+    quote: null
+    snapshot: adi20/hf-card
+  notes: The card declares no licence. ADI-20 extends ADI17 (the card asks users to download ADI17 first); the stated total includes ADI17, so the overlap-adjusted figure subtracts the ADI17 training hours.
+  rows:
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: 19 dialects and MSA, genre: mixed,
+     hours_method: card_or_paper_stated, stated_hours: 3556.76,
+     quote: "a total duration of 3556.76 hours of MSA and dialectal Arabic speech", snapshot: adi20/paper,
+     locator: ADI-20 paper, section 2.2}
+
+- corpus_id: sada
+  name: "SADA: Saudi Audio Dataset for Arabic"
+  publisher: SDAIA National Center for AI and the Saudi Broadcasting Authority
+  homepage_url: https://www.kaggle.com/datasets/sdaiancai/sada2022
+  version: Kaggle release
+  release_date: null
+  access: download page
+  platform_caveat: null
+  licence:
+    string: CC BY-NC-SA 4.0
+    declared: cc-by-nc-sa-4.0
+    url: https://www.kaggle.com/datasets/sdaiancai/sada2022
+    quote: This work is licensed under a CC BY-NC-SA 4.0 license.
+    snapshot: sada/kaggle
+  notes: Recordings of more than 57 TV shows; the publisher states that most are in Saudi dialects. One Hub copy (m6011/sada2022) declares CC BY 4.0; the publisher's licence is used.
+  rows:
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: "majority Saudi dialects (publisher)", genre: broadcast,
+     hours_method: card_or_paper_stated, stated_hours: 667,
+     quote: The total number of hours published for these recordings is ~667 hours., snapshot: sada/kaggle,
+     locator: Kaggle page, description}
+  - {hour_type: transcribed, dialect_group: mixed, source_dialect_label: "majority Saudi dialects (publisher)", genre: broadcast,
+     hours_method: card_or_paper_stated, stated_hours: 438, stated_sum_of: [418, 10, 10],
+     quote: Each of validation and testing sets is around 10 hours in audio segments length while training set is 418 hours.,
+     snapshot: sada/kaggle, locator: "Kaggle page, description (418 h training + about 10 h validation + about 10 h test)"}
+
+- corpus_id: qasr
+  name: QASR
+  publisher: QCRI (Mubarak, Hussein, Chowdhury, Ali)
+  homepage_url: https://huggingface.co/datasets/QCRI/QASR
+  version: e15026c7e4a1fee8b677e0d0b716de7f5c90fdb2
+  release_date: 2021-06-24
+  access: request process (publisher link on the card)
+  platform_caveat: null
+  licence:
+    string: CC BY-NC 2.0 (card metadata); "Non-Commercial Purpose ONLY!" (card text)
+    declared: cc-by-nc-2.0
+    url: https://huggingface.co/datasets/QCRI/QASR
+    quote: Non-Commercial Purpose ONLY!
+    snapshot: qasr/hf-card
+  notes: TV broadcast speech from one channel, multi-dialect. The Hub card holds no files; it links to a publisher page where the data is obtained through a request process, so the audio is classed research use or on request (the card's licence metadata says CC BY-NC 2.0). The paper says the corpus is made available to the research community.
+  rows:
+  - {hour_type: released_audio, licence_class_override: research-or-request,
+     override_quote: "Please follow the instructions on the linked page to complete the request process and download the data.",
+     override_snapshot: qasr/hf-card,
+     dialect_group: mixed, source_dialect_label: multi-dialect (publisher description), genre: broadcast,
+     hours_method: card_or_paper_stated, stated_hours: 2000,
+     quote: "This multi-dialect speech dataset contains 2,000 hours of speech sampled at 16kHz", snapshot: qasr/paper,
+     locator: QASR paper, abstract}
+
+- corpus_id: mgb2
+  name: MGB-2
+  publisher: QCRI (Ali, Bell, Glass, Messaoui, Mubarak, Renals, Zhang)
+  homepage_url: https://huggingface.co/datasets/QCRI/mgb2
+  version: 0008ae13
+  release_date: 2016
+  access: gated (licence agreement; files not opened)
+  platform_caveat: null
+  licence:
+    string: QCRI-ALT Corpus License Agreement (non-exclusive research use)
+    declared: research-use
+    url: https://huggingface.co/datasets/QCRI/mgb2
+    quote: NON-EXCLUSIVE RESEARCH USE LICENSE FOR QCRI-ALT Corpus
+    snapshot: mgb2/hf-card
+  notes: TV broadcast programmes from one channel; the repository is gated and its files were not opened. QASR comes from the same channel; the overlap between the two was not measured.
+  rows:
+  - {hour_type: released_audio, dialect_group: mixed, source_dialect_label: multi-dialect (challenge description), genre: broadcast,
+     hours_method: card_or_paper_stated, stated_hours: 1200,
+     quote: "A total of 1,200 hours have been released with lightly supervised transcriptions", snapshot: mgb2/paper,
+     locator: MGB-2 paper, abstract}
+
+- corpus_id: casablanca
+  name: Casablanca (validation and test release)
+  publisher: UBC Deep Learning and NLP group (Talafha et al.)
+  homepage_url: https://huggingface.co/datasets/UBC-NLP/Casablanca
+  version: 8951b1b88e28c1107142ced57967b8d16350951d
+  release_date: 2024-11-14
+  access: open download
+  platform_caveat: null
+  licence:
+    string: CC BY-NC-ND 4.0
+    declared: cc-by-nc-nd-4.0
+    url: https://huggingface.co/datasets/UBC-NLP/Casablanca
+    quote: "cc-by-nc-nd-4.0"
+    snapshot: casablanca/hf-card
+  notes: The release holds the validation and test sets only. Each configuration is one country; rows keep the country as the source label.
+  rows:
+  - {hour_type: released_audio, partition: algeria, dialect_group: Maghrebi, iso639_3: arq, source_dialect_label: Algeria (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Algeria}}
+  - {hour_type: released_audio, partition: egypt, dialect_group: Egyptian, iso639_3: arz, source_dialect_label: Egypt (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Egypt}}
+  - {hour_type: released_audio, partition: jordan, dialect_group: Levantine, iso639_3: ajp, source_dialect_label: Jordan (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Jordan}}
+  - {hour_type: released_audio, partition: mauritania, dialect_group: Maghrebi, iso639_3: mey, source_dialect_label: Mauritania (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Mauritania}}
+  - {hour_type: released_audio, partition: morocco, dialect_group: Maghrebi, iso639_3: ary, source_dialect_label: Morocco (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Morocco}}
+  - {hour_type: released_audio, partition: palestine, dialect_group: Levantine, iso639_3: ajp, source_dialect_label: Palestine (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Palestine}}
+  - {hour_type: released_audio, partition: uae, dialect_group: Gulf, source_dialect_label: UAE (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: UAE}}
+  - {hour_type: released_audio, partition: yemen, dialect_group: Yemeni, source_dialect_label: Yemen (source-stated country), genre: mixed, hours_method: computed_from_metadata, measurement: casablanca, field: seconds, filter: {config: Yemen}}
+
+- corpus_id: mixat
+  name: Mixat
+  publisher: MBZUAI (Al Ali, Aldarmaki)
+  homepage_url: https://huggingface.co/datasets/MBZUAI/MIXAT
+  version: 66d4f5386e89710ad8fb2a1f54dd5ebed890ba7a
+  release_date: 2025-06-11
+  access: open download
+  platform_caveat: null
+  licence:
+    string: research use (paper); no licence on the card
+    declared: research-use
+    url: https://arxiv.org/abs/2405.02578
+    quote: The dataset will be made publicly available for research use.
+    snapshot: mixat/paper
+  notes: Emirati Arabic code-mixed with English, from two public conversational programmes. The publisher repository declares no licence and holds a training split only; the paper describes 15 hours and limits use to research. A copy (sqrk/mixat-tri) holds training and test splits and declares CC BY-NC-SA 4.0 (measured in evidence/measurements/mixat-copy-sqrk.json).
+  rows:
+  - {hour_type: released_audio, dialect_group: Gulf, source_dialect_label: Emirati (publisher), genre: code-switch,
+     hours_method: computed_from_metadata, measurement: mixat, field: seconds}
+
+- corpus_id: tarteel-recitations
+  name: Tarteel AI Quran verse recitations (tarteel-ai/everyayah)
+  publisher: Tarteel AI
+  homepage_url: https://huggingface.co/datasets/tarteel-ai/everyayah
+  version: 6ea510862d64f59e555a4a8363eebc0f415621df
+  release_date: 2026-09-17
+  access: open download
+  platform_caveat: null
+  licence:
+    string: recordings not documented; remainder CC BY 4.0
+    declared: none
+    url: https://huggingface.co/datasets/tarteel-ai/everyayah
+    quote: Licensing of the individual recordings is not documented. Use at your own risk. The remainder of the dataset is CC BY 4.0.
+    snapshot: tarteel-recitations/hf-card
+  notes: Quran recitation by many reciters, shown separately so that it does not count as dialect coverage. The card says the licence of the recordings is not documented; copies on the Hub declare MIT.
+  rows:
+  - {hour_type: released_audio, dialect_group: Classical-Quranic, source_dialect_label: Quranic recitation, genre: recitation,
+     hours_method: computed_from_metadata, measurement: tarteel-recitations, field: seconds}
+
+overlaps:
+- {a: yodas3-ar, b: yodas2-ar, method: publisher_statement, shared_hours: 0,
+   quote: "We crawl a distinct set of videos from the v1 and v2 versions of YODAS, to guarantee that there are no overlaps in the data.",
+   snapshot: yodas3-ar/hf-card}
+- {a: arabic-speech-corpus, b: arvoice, b_partition: part-3, method: publisher_statement, shared: all_of_b,
+   quote: "(3) a modified subset of the Arabic Speech Corpus", snapshot: arvoice/hf-card}
+- {a: adi17, b: adi20, method: publisher_statement, shared_hours: 3033,
+   quote: "We present ADI-20, an extension of the previously published ADI-17 Arabic Dialect Identification (ADI) dataset.",
+   snapshot: adi20/paper}
+- {a: masc, b: adi17, method: video_id_intersection, a_measurement: masc-transcribed, b_measurement: adi17-devtest,
+   scope: MASC segment tables (all subsets) and ADI17 validation and test segment IDs}
+- {a: masc, b: adi20, method: video_id_intersection, a_measurement: masc-transcribed, b_measurement: adi20-53h-manifest,
+   scope: MASC segment tables (all subsets) and the ADI-20-53h training manifest}
+- {a: masc, b: yodas3-ar, method: not_measured, reason: YODAS recording IDs are publisher IDs, not source video IDs}
+- {a: masc, b: yodas2-ar, method: not_measured, reason: YODAS recording IDs are publisher IDs, not source video IDs}
+- {a: qasr, b: mgb2, method: not_measured, reason: both come from the same TV channel; no shared identifiers are published}

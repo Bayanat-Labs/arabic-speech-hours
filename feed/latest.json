@@ -1,0 +1,136 @@
+{
+ "schema_version": "1.0",
+ "as_of": "2026-10-30",
+ "as_of_label": "30 October 2026",
+ "headline_hours": 36221,
+ "headline": {
+  "label": "Open, commercially usable Arabic speech: released audio hours, overlap-adjusted",
+  "licence_class": "open-commercial",
+  "hour_type": "released_audio",
+  "hours": 36220.98,
+  "hours_rounded": 36221,
+  "hours_gross": 36223.67,
+  "n_corpora": 8,
+  "youtube_derived_hours": 36030.07,
+  "youtube_derived_share": 0.994729,
+  "non_msa_dialect_labelled_hours": 3.0,
+  "non_msa_dialect_labelled_share": 8.3e-05
+ },
+ "by_class": {
+  "open-commercial": 36220.98,
+  "open-noncommercial": 667.0,
+  "no-derivatives": 15.86,
+  "research-or-request": 3216.27,
+  "manifests-only": 0.0,
+  "disputed": 0.0,
+  "unknown": 4639.12
+ },
+ "by_class_detail": {
+  "open-commercial": {
+   "released_audio_hours_gross": 36223.67,
+   "released_audio_hours_overlap_adjusted": 36220.98,
+   "n_corpora": 8
+  },
+  "open-noncommercial": {
+   "released_audio_hours_gross": 667.0,
+   "released_audio_hours_overlap_adjusted": 667.0,
+   "n_corpora": 1
+  },
+  "no-derivatives": {
+   "released_audio_hours_gross": 15.86,
+   "released_audio_hours_overlap_adjusted": 15.86,
+   "n_corpora": 1
+  },
+  "research-or-request": {
+   "released_audio_hours_gross": 3216.27,
+   "released_audio_hours_overlap_adjusted": 3216.27,
+   "n_corpora": 4
+  },
+  "manifests-only": {
+   "released_audio_hours_gross": 0.0,
+   "released_audio_hours_overlap_adjusted": 0.0,
+   "n_corpora": 0
+  },
+  "disputed": {
+   "released_audio_hours_gross": 0.0,
+   "released_audio_hours_overlap_adjusted": 0.0,
+   "n_corpora": 0
+  },
+  "unknown": {
+   "released_audio_hours_gross": 7672.12,
+   "released_audio_hours_overlap_adjusted": 4639.12,
+   "n_corpora": 3
+  }
+ },
+ "other_hour_types": {
+  "transcribed": {
+   "open-commercial": 907.43,
+   "open-noncommercial": 438.0
+  },
+  "validated": {
+   "open-commercial": 93.34
+  }
+ },
+ "by_dialect_group": {
+  "Classical-Quranic": 11.4,
+  "Levantine": 3.0,
+  "mixed": 1000.0,
+  "unlabelled": 35206.58
+ },
+ "by_genre": {
+  "broadcast": 10.0,
+  "mixed": 36030.07,
+  "read": 177.91,
+  "studio-tts": 3.0
+ },
+ "by_corpus": [
+  {
+   "corpus_id": "yodas3-ar",
+   "corpus_name": "YODAS v3, Arabic subset",
+   "hours": 33460.66
+  },
+  {
+   "corpus_id": "yodas2-ar",
+   "corpus_name": "YODAS2, Arabic subset (ar000)",
+   "hours": 1569.41
+  },
+  {
+   "corpus_id": "masc",
+   "corpus_name": "MASC: Massive Arabic Speech Corpus",
+   "hours": 1000.0
+  },
+  {
+   "corpus_id": "common-voice-ar",
+   "corpus_name": "Common Voice Scripted Speech 27.0, Arabic",
+   "hours": 158.28
+  },
+  {
+   "corpus_id": "clartts",
+   "corpus_name": "ClArTTS",
+   "hours": 11.4
+  },
+  {
+   "corpus_id": "mediaspeech-ar",
+   "corpus_name": "MediaSpeech, Arabic",
+   "hours": 10.0
+  },
+  {
+   "corpus_id": "fleurs-ar",
+   "corpus_name": "FLEURS, Arabic (ar_eg)",
+   "hours": 8.23
+  },
+  {
+   "corpus_id": "arabic-speech-corpus",
+   "corpus_name": "Arabic Speech Corpus",
+   "hours": 3.0
+  }
+ ],
+ "n_corpora": 17,
+ "n_candidates_listed": 648,
+ "page_url": "https://bayanatlabs.com/open/arabic-speech-hours",
+ "dataset_url": "https://huggingface.co/datasets/Bayanat-Labs/arabic-speech-hours",
+ "changelog_url": "https://github.com/Bayanat-Labs/arabic-speech-hours/blob/v0.1.0/CHANGELOG.md",
+ "licence": "CC-BY-4.0",
+ "citation": "Open Arabic Speech Hours Counter, Bayanat Labs, CC BY 4.0, as of 30 October 2026. https://huggingface.co/datasets/Bayanat-Labs/arabic-speech-hours",
+ "publisher": "Bayanat Labs"
+}

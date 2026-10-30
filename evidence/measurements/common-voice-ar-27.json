@@ -1,0 +1,25 @@
+{
+ "id": "common-voice-ar-27",
+ "spec": {
+  "kind": "cv_release_stats",
+  "url": "https://raw.githubusercontent.com/common-voice/cv-dataset/main/datasets/scripted-speech/cv-corpus-27.0-2026-09-11.json",
+  "locale": "ar"
+ },
+ "kind": "cv_release_stats",
+ "url": "https://raw.githubusercontent.com/common-voice/cv-dataset/main/datasets/scripted-speech/cv-corpus-27.0-2026-09-11.json",
+ "sha256": "6f1b7a28b299a263efaf73787569e50cfbda0fa1ccda2eeb52ecf3a046aaf867",
+ "locale": "ar",
+ "clips": 136832,
+ "users": 1679,
+ "duration_ms": 569802186,
+ "validDurationSecs": 336038.041,
+ "totalHrs": 158.27,
+ "validHrs": 93.34,
+ "seconds": 569802.186,
+ "valid_seconds": 336038.041,
+ "variant": {},
+ "accent": {
+  "": 2005
+ },
+ "measured_at": "2026-10-30T12:57:44Z"
+}

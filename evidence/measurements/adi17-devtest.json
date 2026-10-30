@@ -1,0 +1,132 @@
+{
+ "id": "adi17-devtest",
+ "spec": {
+  "kind": "hf_parquet_ids",
+  "repo": "ArabicSpeech/ADI17",
+  "revision": "bfb3990fb38b199806c1f994928d34847e3d10c6",
+  "patterns": [
+   "data/dev-*.parquet",
+   "data/test-*.parquet"
+  ],
+  "id_col": "id",
+  "group_col": "dialect",
+  "id_regex": "^(?P<vid>.{11})_(?P<start>\\d{6})-(?P<end>\\d{6})",
+  "id_time_scale": 0.01
+ },
+ "kind": "hf_parquet_ids",
+ "repo": "ArabicSpeech/ADI17",
+ "revision": "bfb3990fb38b199806c1f994928d34847e3d10c6",
+ "patterns": [
+  "data/dev-*.parquet",
+  "data/test-*.parquet"
+ ],
+ "id_column": "id",
+ "id_regex": "^(?P<vid>.{11})_(?P<start>\\d{6})-(?P<end>\\d{6})",
+ "id_time_scale": 0.01,
+ "files": [
+  {
+   "path": "data/dev-00000-of-00004.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 662193303,
+   "seconds": 20696.690000000002,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/dev-00001-of-00004.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 681152677,
+   "seconds": 21286.510000000002,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/dev-00002-of-00004.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 602802878,
+   "seconds": 18847.14,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/dev-00003-of-00004.parquet",
+   "rows": 1057,
+   "row_groups": 11,
+   "bytes_fetched": 425984,
+   "file_bytes": 242788496,
+   "seconds": 7593.6,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/test-00000-of-00005.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 635043015,
+   "seconds": 19845.15,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/test-00001-of-00005.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 629257331,
+   "seconds": 19668.22,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/test-00002-of-00005.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 629930679,
+   "seconds": 19690.63,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/test-00003-of-00005.parquet",
+   "rows": 2500,
+   "row_groups": 25,
+   "bytes_fetched": 884736,
+   "file_bytes": 616948626,
+   "seconds": 19283.26,
+   "unparsed_ids": 0
+  },
+  {
+   "path": "data/test-00004-of-00005.parquet",
+   "rows": 2150,
+   "row_groups": 22,
+   "bytes_fetched": 786432,
+   "file_bytes": 519442358,
+   "seconds": 16242.58,
+   "unparsed_ids": 0
+  }
+ ],
+ "n_files": 9,
+ "rows": 20707,
+ "seconds": 163153.78000000003,
+ "bytes_fetched": 7405568,
+ "bytes_in_files": 5219559363,
+ "measured_at": "2026-10-30T13:23:29Z",
+ "api": {
+  "id": "ArabicSpeech/ADI17",
+  "sha": "bfb3990fb38b199806c1f994928d34847e3d10c6",
+  "lastModified": "2025-08-11T02:41:59.000Z",
+  "gated": false,
+  "private": false,
+  "disabled": false,
+  "card_license": null,
+  "license_name": null,
+  "license_link": null,
+  "tags": [
+   "size_categories:1M<n<10M",
+   "modality:audio",
+   "modality:text"
+  ],
+  "n_files": 51
+ }
+}

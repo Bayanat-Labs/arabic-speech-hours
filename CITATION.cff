@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this table, please cite it as below."
+title: "Open Arabic Speech Hours Counter"
+version: "0.1.0"
+date-released: "2026-10-30"
+authors:
+  - name: "Bayanat Labs"
+license: CC-BY-4.0
+repository-code: "https://github.com/Bayanat-Labs/arabic-speech-hours"
+url: "https://huggingface.co/datasets/Bayanat-Labs/arabic-speech-hours"
+abstract: "Released Arabic speech hours by licence class, hour type, dialect and genre, computed from public metadata and quoted publisher statements, as of 30 October 2026."
+keywords: [arabic, speech, datasets, licences, hours]
